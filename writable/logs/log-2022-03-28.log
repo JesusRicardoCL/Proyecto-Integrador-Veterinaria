@@ -1,0 +1,24 @@
+CRITICAL - 2022-03-28 11:38:08 --> include(application/views/plantilla/head.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\vet\app\Views\usuario\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(applica...', 'C:\\laragon\\www\\...', 5, Array)
+#1 C:\laragon\www\vet\app\Views\usuario\index.php(5): include()
+#2 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#5 C:\laragon\www\vet\app\Controllers\Usuario.php(17): view('usuario/index')
+#6 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->index()
+#7 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-28 11:38:27 --> include(application/views/plantilla/head.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\vet\app\Views\usuario\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(applica...', 'C:\\laragon\\www\\...', 5, Array)
+#1 C:\laragon\www\vet\app\Views\usuario\index.php(5): include()
+#2 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#5 C:\laragon\www\vet\app\Controllers\Usuario.php(17): view('usuario/index')
+#6 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->index()
+#7 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

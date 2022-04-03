@@ -8,11 +8,20 @@ Class Usuario extends ResourceController{
     protected $modelName = 'App\Models\UsuarioModel';
     protected $format = 'json';
 
+
     public function index(){
+        //$clientes = $this->showAll(); 
+
+        echo view('usuario/index');
+    }
+
+    public function showAll(){
         
         $data=[
            "usuarios" => $this->model->findAll()
         ]; 
+
+        //return view('usuario/index');
 
         return $this->respond($data);
     }
