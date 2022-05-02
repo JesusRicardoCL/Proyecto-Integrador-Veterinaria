@@ -1,36 +1,13 @@
-<?php if(isset($_GET["m"])){ ?>
-  <p style="color:red;"> <?= $_GET["m"]; ?> </p>
-<?php }  ?>
-
-<form action="login/login" method="post">
-
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin 2 - Login</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+<?php echo view('plantilla/head'); ?>
 
 </head>
 
-<body class="bg-gradient-primary" style="background-color: #4e73df; background-image: linear-gradient(180deg,#4e73df 10%,#4e73df 100%)">
+<body class="bg-gradient-primary">
 
     <div class="container">
 
@@ -51,31 +28,25 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input class="form-control form-control-user"
+                                            <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Telefono" name="telefono">
+                                                placeholder="Correo electronico o telefono">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Contraseña" name="contrasena">
+                                                id="exampleInputPassword" placeholder="Contraseña">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
-                                        <hr>
+                                        <a class="btn btn-primary btn-user btn-block" onclick="login()">
+                                            Iniciar sesión
+                                        </a>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a class="small" href="forgot-password.html">¿Olvidaste tu contraseña?</a>
                                     </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
-                                    </div>
+                                    <!-- <div class="text-center">
+                                        <a class="small" href="register.html">Crear una cuenta</a>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -88,15 +59,72 @@
 
     </div>
 
-    <link rel="stylesheet" href="<?php base_url(); ?>/vendor/jquery/jquery.min.js">
-    <link rel="stylesheet" href="<?php base_url(); ?>/vendor/bootstrap/js/bootstrap.bundle.min.js">
+    <!-- Scripts -->
+    <?php echo view('plantilla/scripts'); ?>
 
-    <!-- Core plugin JavaScript-->
-    <link rel="stylesheet" href="<?php base_url(); ?>/vendor/jquery-easing/jquery.easing.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Custom scripts for all pages-->
-    <link rel="stylesheet" href="<?php base_url(); ?>/js/sb-admin-2.min.jss">
+    <script>
+
+    function login(){
+    
+      var url = 'http://localhost/vet/public';
+
+      $.ajax({
+        url: url+'/auth',
+        data: {"user": $("#user").val(), 
+              "password": $("#password").val(), 
+              "tipo": 0},
+        type: "POST",
+        dataType: "json",
+      })
+      .done(function(data,textStatus,jqXHR){
+
+        //Se guardan los valores obtenidos en el localStorage
+        if(typeof data.error !== "string"){
+        
+        localStorage.setItem("token",data.token);
+        localStorage.setItem("tipo",data.tipo);
+        localStorage.setItem("user",JSON.stringify(data.user));
+
+        location.href = "/vet/public";
+
+        }else{
+          alert(data.error);
+        }
+
+        /*
+          A partir de aqui se realizan muchas pruebas para comprobar que 
+          todo se guarde jijijija
+        */
+
+        // Impresion de los datos guardados
+        console.log("El token: "+localStorage.getItem("token"));
+        console.log("El tipo: "+localStorage.getItem("tipo"));
+        console.log("El user: "+localStorage.getItem("user"));
+
+        // Conversion del objeto guardado como json a objeto user
+        var user = JSON.parse(localStorage.getItem("user"));
+
+        // Impresion de los datos del objeto user
+        console.log("hola "+user.nombre+" "+user.apellidos);
+
+        // Redireccion de la aplicacion a otra pantalla
+        // location.href = "/gymapp";
+      })
+      .fail(function(jqXHR,textStatus,errorThrown){
+        console.log("La solicitud ha fallado: " + textStatus)
+      })
+
+    }
+
+
+    </script>
+
+    
+    <!-- End of Scripts -->
 
 </body>
-</form>
+
 </html>

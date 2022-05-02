@@ -47,7 +47,7 @@
 
                         <div class="container" style="padding:10px; min-width:100%; align-items:center; display:flex">
                             <div class="col" style="margin: 20px; height: 160px; width: 30%; border: 2px solid #d9d9d9; border-radius: 20px; padding: 20px; float: left;">
-                                <a class="nav-link" href="usuario/index" style="font-size:26px;">
+                                <a class="nav-link" href="<?= base_url('usuario/index'); ?>" style="font-size:26px;">
                                     <center>
                                         <i class="fas fa-user" style="font-size:60px"></i>
                                         <br />
@@ -56,7 +56,7 @@
                                 </a>
                             </div>
                             <div class="col" style="margin: 20px; height: 160px; width: 30%; border: 2px solid #d9d9d9; border-radius: 20px; padding: 20px; float: left; ">
-                                <a class="nav-link" href="mascota/index" style="font-size:26px;">
+                                <a class="nav-link" href="<?= base_url('mascota/index'); ?>" style="font-size:26px;">
                                     <center>
                                         <i class="fas fa-fw fa-dog" style="font-size:60px"></i>
                                         <br />
@@ -65,7 +65,7 @@
                                 </a>
                             </div>
                             <div class="col" style="margin: 20px; height: 160px; width: 30%; border: 2px solid #d9d9d9; border-radius: 20px; padding: 20px; float: left; ">
-                                <a class="nav-link" href="animal/index" style="font-size:26px;">
+                                <a class="nav-link" href="<?= base_url('animal/index'); ?>" style="font-size:26px;">
                                     <center>
                                         <i class="fas fa-fw fa-paw" style="font-size:60px"></i>
                                         <br />

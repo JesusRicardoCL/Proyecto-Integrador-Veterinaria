@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" style="-webkit-transition: all 200ms ease; -moz-transition: all 200ms ease;
 -ms-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease;" id="accordionSidebar">
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/index.php" style="enable-background">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('index.php'); ?>" style="enable-background">
         <svg viewBox="0 0 56 54" style="width:50px">
             <g fill="#ffffff">
                 <path class="dogeIcon" d="M15.8 53.2s-3-6.8-3-8.3c0-1.4 0-1.5-.4-2.4a9 9 0 0 0-1.1-1.6l-.6-.6-1.5-.2c-2-.1-2.6-.3-4-1a9.8 9.8 0 0 1-4-4c-.7-1.4-.9-2-.8-2.7a4 4 0 0 1 1-2.2l.8-1 1-1.2L6 24.3c.1-.3.2-.6 0-1.4a9 9 0 0 1 .2-3.6l.3-1.8c0-1 .1-1.5.4-2.2.4-1 1.9-3.1 3-4.3a18 18 0 0 0 2.5-4.3c.7-2.6 1.1-3.5 1.9-4.3a6 6 0 0 1 4.6-2c1.2 0 1.9.2 3.4 1.1l1.3.7.8-.3 2.1-.6c4.3-1 10.4-1 14.5-.1 1.3.2 1.6.3 2 .1l2.4-.1c3.1.1 4.3.6 5.8 2.1 1 1.2 1.6 2.5 2.2 4.7.6 2.7.8 3.2 1.7 5.1.5 1 1.2 5.5 1.2 5.5L24.9 50Zm38-34.8-1.2-5.3C52 11.8 51 10 50.7 10l-.1 1.9c0 1.5 0 2.2-.3 3.5-.6 2.5-1.2 2.8-3.3 1.7-.7-.3-1.5-.7-1.8-1-3.2-2.6-6.7-6-7.8-7.6-1.2-1.9-1.6-3-1.2-3.3.1 0 .3 0 .5.3l.6.8.4.5 1.1-1 1.5-1.4c.3-.2.4-.4.3-.5-.5-.4-3.5-.7-7.4-.7-2.6.1-3 .1-5.2.6a43.2 43.2 0 0 0-13.1 5c-.6-.4-4.8 4.4-5.6 6.3-.5 1-.4 1.2.3 1.2.5 0 .6.1 1.2.7.8 1 1.2 2 1.2 2.7 0 .5 0 .6-.7 1.3A46.3 46.3 0 0 0 8 24.8a32 32 0 0 1-2.3 2.6c-1.5 1.4-1.9 2-1.2 1.9 2.3-.5 2.5-.6 4.7-.4 2.4.2 3.6.5 4 1.2.7 1-.1 2.7-2 4.3a7.7 7.7 0 0 1-4.3 2l-1.1.3c-.2.1 1.1.5 2.3.6.9.1 1.5.3 2.3.7 1.6.6 2.2.8 3.5.8 1.4 0 1.8-.2 3.5-1.2 2.6-1.4 4.4-3.1 5-4.6.6-1 1.5-2.4 1.7-2.4.2 0 .3.2.4.4l.3.4c.3 0 .6 1 .6 1.7v.8l-1.1.5a9 9 0 0 0-2.4 1.9l-2.3 2c-1 .9-3 2-4.2 2.2-1 .2-1.2.3-.9.8.5.9 3 7.6 3 7.6C35 33.6 53.8 18.4 53.8 18.4zM15.5 36.7c-.1-.2 0-.5.3-.5.1 0 .2.1.2.3-.1.2-.4.4-.5.2zm3-1.7c0-.3.2-.5.4-.3.1.2.1.3 0 .4h-.3zm-4-1v-.4c.3-.2.7 0 .6.3 0 .3-.3.4-.5.1zm4.6-1.2v-.3c.2-.1.5.2.3.4l-.3-.1zm-1.8-1.6c-.1-.3 0-.4.3-.3.1 0 .2.2.1.3 0 .1-.3.1-.4 0zm5-8.7a6 6 0 0 1-1.6-.7c-.2-.4-.1-.8.2-1.3l.7-1c.5-.9 1.5-1.7 2.3-2.1.6-.3 1-.3 1.8-.3 1.3 0 2.1.2 2.9.8.3.3.8.5 1 .5.4 0 .7.2.7.2.2.2-.7 1.7-1.5 2.6-.5.6-1 .8-2 1.3-1.7.7-2.5.7-4.5 0zM9.4 22l.9-1-.4-.3-1-.3c-.5-.2-.5-.2-.7 0-.2.4 0 2.5.2 2.5l1-1zm39.7-6.3.4-2.2c.5-3.2-.4-6.4-2.2-8.1-1-1-1.2-.8-.5.3 1.3 2 2 5.7 1.6 9-.2 1.5-.1 1.7.3 1.7.2 0 .3-.1.4-.7zm-1.6-3.4c0-2.8 0-3-.4-4.2-.7-2.1-1.7-3.2-3.2-3.4-.9-.1-2.2.1-2.9.6-1 .7-2.7 2.2-2.7 2.5a37.7 37.7 0 0 0 8 7.4c1.3.8 1.3.8 1.2-2.9zm-2.9-1.7c-.2-.4-.4-.5-.8-.5-.2 0-.3-.1-.4-.4a1 1 0 0 0-.5-.5c-.4-.1-.6-.5-.5-.8.1-.1 1 .4 1.4.9l.5.2c.5 0 .8.6.8 1.3 0 .2-.3.2-.5-.2zM16.4 7.4c1-.6 3.4-1.7 4.5-2 1.3-.5 1.1-.7-1.2-1.3-1.9-.5-3-.6-3.6-.1-.4.4-.8 1.7-.8 2.7 0 .8 0 1.2.2 1.2l1-.5z" paint-order="markers fill stroke" />
@@ -19,7 +19,7 @@
     <hr class="sidebar-divider my-0">
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="/index.php">
+        <a class="nav-link" href="<?= base_url('index.php'); ?>">
             <i class="fas fa-fw fa-home"></i>
             <span>Menú Principal</span>
         </a>
@@ -35,12 +35,12 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="@Url.Action("Index", "Usuario")">Usuarios</a>
-                <a class="collapse-item" href="@Url.Action("Index", "Mascota")">Mascotas</a>
-                <a class="collapse-item" href="@Url.Action("Index", "Animal")">Animales</a>
-                <a class="collapse-item" href="@Url.Action("Index", "Producto")">Productos</a>
-                <a class="collapse-item" href="@Url.Action("Index", "Venta")">Ventas</a>
-                <a class="collapse-item" href="@Url.Action("Index", "Cita")">Citas</a>
+                <a class="collapse-item" href="<?= base_url('usuario/index'); ?>">Usuarios</a>
+                <a class="collapse-item" href="<?= base_url('mascota/index'); ?>">Mascotas</a>
+                <a class="collapse-item" href="<?= base_url('animal/index'); ?>">Animales</a>
+                <a class="collapse-item" href="<?= base_url('producto/index'); ?>")">Productos</a>
+                <a class="collapse-item" href="<?= base_url('venta/index'); ?>")">Ventas</a>
+                <a class="collapse-item" href="<?= base_url('cita/index'); ?>">Citas</a>
             </div>
         </div>
     </li>

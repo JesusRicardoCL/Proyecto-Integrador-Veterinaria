@@ -3,16 +3,25 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 
-Class Usuario extends ResourceController{
+Class Usuario extends Auth{
 
     protected $modelName = 'App\Models\UsuarioModel';
     protected $format = 'json';
 
 
     public function index(){
-        //$clientes = $this->showAll(); 
+        
+        $data=[
+            "usuarios" => $this->model->findAll()
+         ]; 
 
-        echo view('usuario/index');
+        echo view('usuario/index',$data);
+    }
+
+    public function login(){
+        
+
+        echo view('usuario/login');
     }
 
     public function showAll(){
@@ -21,7 +30,7 @@ Class Usuario extends ResourceController{
            "usuarios" => $this->model->findAll()
         ]; 
 
-        //return view('usuario/index');
+        
 
         return $this->respond($data);
     }

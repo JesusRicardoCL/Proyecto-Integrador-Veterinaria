@@ -28,7 +28,7 @@
                 
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Usuarios</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Animales</h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <a class="btn btn-success" onclick="abrirModal(0)">Agregar nuevo</a>
@@ -39,34 +39,25 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Usuario <i class="fas fa-user"></i> </th>
-                                            <th>Domicilio <i class="fas fa-map-marked"></i> </th>
-                                            <th>Telefono <i class="fas fa-phone-square-alt"></i> </th>
-                                            <th>Correo <i class="fas fa-envelope-square"></i></i> </th>
+                                            <th>Nombre <i class="fas fa-user"></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Usuario</th>
-                                            <th>Domicilio</th>
-                                            <th>Telefono</th>
-                                            <th>Correo</th>
-                                            <th>Acciones</th>
+                                            <th>Nombre</th>
+                                            <th>Acciones</i></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
 
-                                    <?php foreach ($usuarios as $usuario) { ?> 
+                                    <?php foreach ($animales as $animal) { ?> 
 							
                                         <tr>
-                                          <td> <?= $usuario['id'] ?> </td>
-                                          <td> <?= $usuario['nombre'] ?> </td> 
-                                          <td> <?= $usuario['domicilio'] ?> </td>
-                                          <td> <?= $usuario['telefono']  ?> </td>
-                                          <td> <?= $usuario['correo']  ?> </td>
-                                          <td> <?= $usuario['id']  ?> </td>
+                                          <td> <?= $animal['id'] ?> </td>
+                                          <td> <?= $animal['nombre'] ?> </td> 
+                                          <td> <?= $animal['id']  ?> </td>
                                         </tr>
         
                                     <?php  } ?> 

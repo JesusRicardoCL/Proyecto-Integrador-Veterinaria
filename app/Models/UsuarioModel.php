@@ -17,5 +17,18 @@ class UsuarioModel extends Model {
         "contrasena",
         "tipo_usuario"
     ];
+
+    public function login($user, $password){
+        $result = $this -> asArray()
+        -> where([
+            "telefono" => $user,
+            "contrasena" => $password
+        ]) -> orWhere([
+            "correo" => $user,
+            "contrasena" => $password
+        ]) -> first();
+
+        return $result;
+    }
     
 }

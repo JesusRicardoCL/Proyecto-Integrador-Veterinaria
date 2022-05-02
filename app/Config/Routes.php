@@ -33,13 +33,13 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->resource('animal');
-$routes->resource('cita');
-$routes->resource('cliente');
-$routes->resource('mascota');
-$routes->resource('producto');
-$routes->resource('vacuna');
-$routes->resource('venta');
+//$routes->resource('animal');
+//$routes->resource('cita');
+//$routes->resource('cliente');
+//$routes->resource('mascota');
+//$routes->resource('producto');
+//$routes->resource('vacuna');
+//$routes->resource('venta');
 
 /*
  * --------------------------------------------------------------------

@@ -14,7 +14,7 @@ Class Animal extends ResourceController{
            "animales" => $this->model->findAll()
         ]; 
 
-        return $this->respond($data);
+        echo view('animal/index',$data);
     }
 
     public function show($id = NULL){

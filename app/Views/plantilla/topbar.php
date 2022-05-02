@@ -6,31 +6,31 @@
     <!-- Topbar Navbar -->
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="<?= base_url('index.php'); ?>">
                 <i class="fas fa-fw fa-home"></i>&nbsp;&nbsp;
                 <span> Menú Principal</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Action("Index", "Usuario")">
+            <a class="nav-link" href="<?= base_url('usuario/index'); ?>">
                 <i class="fas fa-user"></i>&nbsp;&nbsp;
                 <span> Usuarios</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Action("Index", "Mascota")">
+            <a class="nav-link" href="<?= base_url('mascota/index'); ?>">
                 <i class="fas fa-fw fa-dog"></i>&nbsp;&nbsp;
                 <span> Mascotas</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Action("Index", "Venta")">
+            <a class="nav-link" href="<?= base_url('venta/index'); ?>">
                 <i class="fas fa-solid fa-prescription-bottle"></i>&nbsp;&nbsp;
                 <span> Venta de productos</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="@Url.Action("Index", "Cita")">
+            <a class="nav-link" href="<?= base_url('cita/index'); ?>">
                 <i class="fas fa-solid fa-calendar-day"></i>&nbsp;&nbsp;
                 <span> Registrar una cita</span>
             </a>
@@ -65,7 +65,7 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Usuario</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small nombre-usuario">Usuario</span>
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
