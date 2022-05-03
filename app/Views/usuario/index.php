@@ -67,7 +67,7 @@
                                                 <td> <?= $usuario['telefono']  ?> </td>
                                                 <td> <?= $usuario['correo']  ?> </td>
                                                 <td> <a class="btn btn-warning" onclick="abrirModal(0)">Editar</a>
-                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger ">Eliminar</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $usuario['id'] ?>">Eliminar</button>
                                                 </td>
 
                                             </tr>
@@ -158,7 +158,7 @@
     </div>
 
     <!-- Modal Edit Product-->
-/*
+    /*
     <!-- Modal Create Product-->
     <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -195,7 +195,7 @@
             </div>
         </div>
     </div>
- 
+
     <!-- Modal Delete Product-->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -207,9 +207,10 @@
                 <div class="modal-body">
                     ¿Seguro que deseas eliminar el usuario seleccionado?
                 </div>
+                <input id="id_eliminar" type="hidden">
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-danger" onClick=>Eliminar</button>
+                    <button type="submit" class="btn btn-danger" onClick="eliminar()">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -223,13 +224,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    
     <script>
+                
         //if(!localStorage.getItem("user")){
         //  location.href="<?= base_url('usuario/login') ?>";
         //}
 
         var user = JSON.parse(localStorage.getItem("user"));
-        $(".nombre-usuario").html(user.nombre);
+     //   $(".nombre-usuario").html(user.nombre);
 
         function signout() {
             localStorage.removeItem("token");
@@ -238,7 +241,56 @@
             localStorage.clear();
             location.href = "pages/sign-in.html"
         }
+        var url ="http://localhost/vet/public";
+
+        function eliminar() {
+
+            $.ajax({ //iniciar ajax para crar token   
+                    url: url + '/usuario/delete/' +   $("#id_eliminar").val(),
+                    data: {},
+                    type: "POST",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+
+                    console.log(data);
+
+                    location.href="?";
+
+                 /*    Swal.fire(
+                        'Eliminado!',
+                        'Cliente eliminado.',
+                        'success'
+                    ).then(function() {
+                        location.href = "?";
+                    }); */
+
+
+                }); //eliminar cliente ajax
+
+        } //eliminar cliente funcion
+
+
+
+        $('#deleteModal').on('show.bs.modal', function (event) {
+           
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var id = button.data('id') ; 
+  var modal = $(this)
+  
+
+  $("#id_eliminar").val(id)
+  /* 
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient) */
+})
+
+
     </script>
+
     <!-- End of Scripts -->
 
 </body>
