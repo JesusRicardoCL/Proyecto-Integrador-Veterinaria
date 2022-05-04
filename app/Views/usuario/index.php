@@ -66,7 +66,7 @@
                                                 <td> <?= $usuario['domicilio'] ?> </td>
                                                 <td> <?= $usuario['telefono']  ?> </td>
                                                 <td> <?= $usuario['correo']  ?> </td>
-                                                <td> <a class="btn btn-warning" onclick="abrirModal(0)">Editar</a>
+                                                <td> <a  data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>" >Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $usuario['id'] ?>">Eliminar</button>
                                                 </td>
 
@@ -158,38 +158,39 @@
     </div>
 
     <!-- Modal Edit Product-->
-
-    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Agregar un nuevo usuario</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Editar usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="form_editar"> 
+                    <input id="id_editar" type="hidden">
+
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre">
+                            <input type="text" class="form-control" name="nombre">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Domicilio:</label>
-                            <input type="text" class="form-control" id="domicilio">
+                            <input type="text" class="form-control" name="domicilio">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" id="telefono">
+                            <input type="text" class="form-control" name="telefono">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Correo:</label>
-                            <input type="text" class="form-control" id="correo">
+                            <input type="text" class="form-control" name="correo">
                         </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-success"  onClick="">Crear usuario</button>
+                    <button type="submit" class="btn btn-success"  onClick="editar()">Editar</button>
                 </div>
             </div>
         </div>
@@ -240,7 +241,13 @@
             localStorage.clear();
             location.href = "pages/sign-in.html"
         }
+
+
         var url ="http://localhost/vet/public";
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+        var idd =  $("#id_editar").val(id);
+
 
         function eliminar() {
 
@@ -286,6 +293,10 @@
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient) */
 })
+
+
+
+
 function crear(){
     console.log("le di click")
     
@@ -317,6 +328,69 @@ function crear(){
  }); 
 
   }
+  function llenarForm(){ 
+  $.ajax({   //iniciar ajax para crar token   
+    url: url+'/usuario/show/'+ $("#id_editar").val(),
+    data: { },
+    type: "GET",
+    dataType: "json",
+    headers:{
+      token: localStorage.getItem("token")
+    }
+})
+ .done(function( data, textStatus, jqXHR ) {  
+ var usuario = data.usuario; 
+
+ console.log(data.usuario);
+
+$("input[name='nombre']").val(usuario.nombre);
+$("input[name='domicilio']").val(usuario.domicilio);
+$("input[name='telefono']").val(usuario.telefono);
+$("input[name='correo']").val(usuario.correo);
+ }); 
+
+}
+
+llenarForm();
+
+$('#editarModal').on('show.bs.modal', function (event) {
+           
+           var button = $(event.relatedTarget) // Button that triggered the modal
+           var id = button.data('id') ; 
+           var modal = $(this)
+           
+         
+           $("#id_editar").val(id)
+           /* 
+           modal.find('.modal-title').text('New message to ' + recipient)
+           modal.find('.modal-body input').val(recipient) */
+         })
+
+
+         function editar(){
+     $.ajax({   //iniciar ajax para editar registro   
+        url: url+'/usuario/update/' +$("#id_editar").val(),
+        data:$("#form_editar").serialize(),
+        type: "POST",
+        dataType: "json",
+        headers:{
+          token: localStorage.getItem("token")
+        }
+    })
+    .done(function( data, textStatus, jqXHR ) {   
+  
+        if(data.data.id !== null){
+          alert(data.result);
+          location.href="?";
+        }else{
+          alert("Hay algo mal en el formulario ");
+        }   
+
+    }); 
+
+  }
+
+
 
 
     </script>
