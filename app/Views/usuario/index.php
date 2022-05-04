@@ -129,37 +129,36 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="create">
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre">
+                            <input type="text" class="form-control" name="nombre">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Domicilio:</label>
-                            <input type="text" class="form-control" id="domicilio">
+                            <input type="text" class="form-control" name="domicilio">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" id="telefono">
+                            <input type="text" class="form-control" name="telefono">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Correo:</label>
-                            <input type="text" class="form-control" id="correo">
+                            <input type="text" class="form-control" name="correo">
                         </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-success">Crear usuario</button>
+                    <button type="submit" class="btn btn-success" onClick="crear()">Crear usuario</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal Edit Product-->
-    /*
-    <!-- Modal Create Product-->
+
     <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -190,7 +189,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-success">Crear usuario</button>
+                    <button type="submit" class="btn btn-success"  onClick="">Crear usuario</button>
                 </div>
             </div>
         </div>
@@ -287,6 +286,37 @@
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient) */
 })
+function crear(){
+    console.log("le di click")
+    
+    console.log($("#create").serialize());
+
+     $.ajax({   //iniciar ajax para crar token   
+    url: url+'/usuario/create',
+    data:$("#create").serialize(),
+    type: "POST",
+    dataType: "json",
+    headers:{
+      token: localStorage.getItem("token")
+    }
+})
+ .done(function( data, textStatus, jqXHR ) { 
+  
+  if(data.id != null){
+
+    alert("Usuario "+data.nombre+" se creo correctamente!");
+
+    location.href="?";
+
+  }else{
+
+    alert("Hay algo mal en el formulario ");
+  }
+ 
+
+ }); 
+
+  }
 
 
     </script>
