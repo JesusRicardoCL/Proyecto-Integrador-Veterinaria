@@ -2,8 +2,9 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use App\models\MascotaModel;
-
+use App\models\UsuarioModel;
+use App\models\AnimalModel;
+use App\Models\MascotaModel;
 use Config\Services;
 
 Class Mascota extends ResourceController {
@@ -11,10 +12,55 @@ Class Mascota extends ResourceController {
     protected $modelName = 'App\Models\MascotaModel';
     protected $format = 'json';
 
+    //Funcion con la que estuve haciendo pruebas -Ricardo
+    public function innerJoinMethod()
+    {
+
+        $db = db_connect();
+        $model = new MascotaModel($db);
+        $result = $this->model->getMascotas();
+        echo '<pre>';
+            print_r($result);
+        echo '<pre>';
+
+        //$builder = $this->db->table("animales as a");
+        //$builder->select('a.*, mascota.nombre as mascota');
+        //$builder->join('mascotas as mascota', 'animal.id = mascota.idAnimal');
+        
+        //$data = $builder->get()->getResult();
+        
+
+        //echo "<pre>";
+        //print_r($data);
+
+
+
+
+        //--------
+        //$builder = $this->db->table("tbl_users as user");
+        //$builder->select('user.*, course.name as course_name');
+        //$builder->join('tbl_courses as course', 'user.id = course.user_id');
+        //$data = $builder->get()->getResult();
+        //--------
+      
+        
+    }
+
     public function index(){
+
+        $db = db_connect();
+        $model = new MascotaModel($db);
+        $result = $this->model->getMascotas();
+
+        echo $result;
+
+        $usuarioModel = new UsuarioModel();
+        $animalModel = new AnimalModel();
         
         $data=[
-            "mascotas" => $this->model->findAll()
+            "mascotas" => $this->model->findAll(),
+            "usuarios" => $usuarioModel->findAll(),
+            "animales" => $animalModel->findAll(),
          ]; 
 
         echo view('mascota/index',$data);
@@ -49,8 +95,8 @@ Class Mascota extends ResourceController {
         "nombre" => $this->request->getPost('nombre'),
         "raza" => $this->request->getPost('raza'),
         "descripcion" => $this->request->getPost('descripcion'),
-        "animal" => $this->request->getPost('idAnimal'),
-        "cliente" => $this->request->getPost('idCliente')
+        "idAnimal" => $this->request->getPost('idAnimal'),
+        "idCliente" => $this->request->getPost('idCliente')
        ];
 
        $id = $this->model->insert($data);

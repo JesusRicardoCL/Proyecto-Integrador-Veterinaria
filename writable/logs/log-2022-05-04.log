@@ -1,0 +1,445 @@
+ERROR - 2022-05-04 20:24:07 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 20:24:07 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:25:06 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 20:25:06 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:25:39 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 20:25:39 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:26:35 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 20:26:35 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:27:26 --> Unknown column 'a.nombre' in 'field list'
+ERROR - 2022-05-04 20:27:37 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 20:27:37 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:34:04 --> Table 'vet_db.animal' doesn't exist
+CRITICAL - 2022-05-04 20:34:04 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:34:05 --> Table 'vet_db.animal' doesn't exist
+CRITICAL - 2022-05-04 20:34:05 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:34:05 --> Table 'vet_db.animal' doesn't exist
+CRITICAL - 2022-05-04 20:34:05 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:34:06 --> Table 'vet_db.animal' doesn't exist
+CRITICAL - 2022-05-04 20:34:06 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:39:13 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:39:13 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:40:06 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:40:06 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:40:07 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:40:07 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:40:49 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:40:49 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:41:04 --> Class 'CodeIgniter\RESTful\BaseController' not found
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Router\Router.php(518): include_once()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('mascota/innerJo...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('mascota/innerJo...')
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-04 20:41:05 --> Class 'CodeIgniter\RESTful\BaseController' not found
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Router\Router.php(518): include_once()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('mascota/innerJo...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('mascota/innerJo...')
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-04 20:41:05 --> Class 'CodeIgniter\RESTful\BaseController' not found
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Router\Router.php(518): include_once()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('mascota/innerJo...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('mascota/innerJo...')
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-05-04 20:41:36 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:41:36 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-04 20:41:54 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:41:54 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:43:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:44:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:44:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:44:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:44:29 --> Too few arguments to function CodeIgniter\Database\BaseConnection::query(), 0 passed in C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php on line 29 and at least 1 expected
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(29): CodeIgniter\Database\BaseConnection->query()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 20:48:21 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 20:48:21 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 20:58:55 --> Call to a member function table() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-04 21:11:29 --> syntax error, unexpected '$mascotas' (T_VARIABLE)
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:12:56 --> syntax error, unexpected '$mascotas' (T_VARIABLE)
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:13:51 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:14:56 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:14:57 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:14:57 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:15:04 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:15:07 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:15:13 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:15:20 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:15:33 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:15:34 --> syntax error, unexpected '}'
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jesus\\...')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Masc...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Masc...')
+#3 [internal function]: spl_autoload_call('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(53): class_exists('App\\Models\\Masc...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#8 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-04 21:16:12 --> Argument 1 passed to App\Models\MascotaModel::__construct() must be an instance of CodeIgniter\Database\ConnectionInterface, null given, called in C:\Users\jesus\Documents\GitHub\vet\system\Config\Factories.php on line 110
+#0 C:\Users\jesus\Documents\GitHub\vet\system\Config\Factories.php(110): App\Models\MascotaModel->__construct(NULL)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(780): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#2 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(54): model('App\\Models\\Masc...')
+#3 C:\Users\jesus\Documents\GitHub\vet\system\RESTful\BaseResource.php(37): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Masc...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(810): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-05-04 21:18:11 --> Unknown column 'animal.id' in 'on clause'
+CRITICAL - 2022-05-04 21:18:11 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:18:37 --> Unknown column 'animales.id' in 'on clause'
+CRITICAL - 2022-05-04 21:18:37 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:19:19 --> Unknown table 'a'
+CRITICAL - 2022-05-04 21:19:19 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:31:06 --> Unknown column 'u.idCliente' in 'on clause'
+CRITICAL - 2022-05-04 21:31:06 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:33:48 --> Unknown column 'u.idCliente' in 'on clause'
+CRITICAL - 2022-05-04 21:33:48 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:35:49 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 21:35:49 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:36:56 --> Unknown column 'a.nombre' in 'field list'
+CRITICAL - 2022-05-04 21:36:56 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-04 21:37:39 --> Unknown column 'u.idCliente' in 'on clause'
+CRITICAL - 2022-05-04 21:37:39 --> Call to a member function getResult() on bool
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(20): App\Models\MascotaModel->getMascotas()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->innerJoinMethod()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-04 21:39:11 --> Cannot use object of type stdClass as array
+#0 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('mascota/index', Array, true)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(60): view('mascota/index', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->index()
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-04 21:39:38 --> Cannot use object of type stdClass as array
+#0 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('mascota/index', Array, true)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(63): view('mascota/index', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->index()
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-04 21:42:22 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\mascota\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('mascota/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(60): view('mascota/index', Array)
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->index()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-04 21:48:21 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\mascota\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('mascota/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(66): view('mascota/index', Array)
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->index()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-04 21:52:12 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\mascota\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('mascota/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Mascota.php(66): view('mascota/index', Array)
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->index()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

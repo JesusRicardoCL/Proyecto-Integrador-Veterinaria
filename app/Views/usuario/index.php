@@ -25,8 +25,8 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-
                 <div class="container-fluid">
+
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Usuarios</h1>
                     <div class="card shadow mb-4">
@@ -66,10 +66,9 @@
                                                 <td> <?= $usuario['domicilio'] ?> </td>
                                                 <td> <?= $usuario['telefono']  ?> </td>
                                                 <td> <?= $usuario['correo']  ?> </td>
-                                                <td> <a  data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>" >Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $usuario['id'] ?>">Eliminar</button>
                                                 </td>
-
                                             </tr>
 
                                         <?php  } ?>
@@ -102,137 +101,30 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- ESTO ES PARA EL CERRAR SESION PERO EL INICIO DE SESION NO SIRVE XD-->
+    <?php echo view('modals/usuario/logout'); ?>
 
     <!-- Modal Create Product-->
-    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Agregar un nuevo usuario</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="create">
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Nombre:</label>
-                            <input type="text" class="form-control" name="nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Domicilio:</label>
-                            <input type="text" class="form-control" name="domicilio">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" name="telefono">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Correo:</label>
-                            <input type="text" class="form-control" name="correo">
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-success" onClick="crear()">Crear usuario</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php echo view('modals/usuario/crear'); ?>
 
     <!-- Modal Edit Product-->
-    <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar usuario</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="form_editar"> 
-                    <input id="id_editar" type="hidden">
-
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Nombre:</label>
-                            <input type="text" class="form-control" name="nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Domicilio:</label>
-                            <input type="text" class="form-control" name="domicilio">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" name="telefono">
-                        </div>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Correo:</label>
-                            <input type="text" class="form-control" name="correo">
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-success"  onClick="editar()">Editar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php echo view('modals/usuario/editar'); ?>
 
     <!-- Modal Delete Product-->
-    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Eliminar</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Seguro que deseas eliminar el usuario seleccionado?
-                </div>
-                <input id="id_eliminar" type="hidden">
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-danger" onClick="eliminar()">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <?php echo view('modals/usuario/eliminar'); ?>
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
+    <!-- Script para comprobar que haya un usuario con sesion iniciada -->
+    <!-- NO FUNCIONA -->
     <script>
-                
         //if(!localStorage.getItem("user")){
         //  location.href="<?= base_url('usuario/login') ?>";
         //}
 
         var user = JSON.parse(localStorage.getItem("user"));
-     //   $(".nombre-usuario").html(user.nombre);
+        //   $(".nombre-usuario").html(user.nombre);
 
         function signout() {
             localStorage.removeItem("token");
@@ -241,18 +133,19 @@
             localStorage.clear();
             location.href = "pages/sign-in.html"
         }
+    </script>
 
-
-        var url ="http://localhost/vet/public";
+    <!-- Scripts de CRUD -->
+    <script>
+        var url = "<?= base_url(); ?>";
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get("id");
-        var idd =  $("#id_editar").val(id);
-
+        var idd = $("#id_editar").val(id);
 
         function eliminar() {
 
-            $.ajax({ //iniciar ajax para crar token   
-                    url: url + '/usuario/delete/' +   $("#id_eliminar").val(),
+            $.ajax({
+                    url: url + '/usuario/delete/' + $("#id_eliminar").val(),
                     data: {},
                     type: "POST",
                     dataType: "json",
@@ -264,135 +157,123 @@
 
                     console.log(data);
 
-                    location.href="?";
-
-                 /*    Swal.fire(
-                        'Eliminado!',
-                        'Cliente eliminado.',
-                        'success'
-                    ).then(function() {
-                        location.href = "?";
-                    }); */
+                    Swal.fire({
+                        title: 'Éxito!',
+                        text: 'El cliente se ha eliminado correctamente!',
+                        type: 'sucess'
+                    }).then(function() {
+                        location.reload();
+                    });
 
 
-                }); //eliminar cliente ajax
+                });
 
-        } //eliminar cliente funcion
-
-
-
-        $('#deleteModal').on('show.bs.modal', function (event) {
-           
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var id = button.data('id') ; 
-  var modal = $(this)
-  
-
-  $("#id_eliminar").val(id)
-  /* 
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient) */
-})
-
-
-
-
-function crear(){
-    console.log("le di click")
-    
-    console.log($("#create").serialize());
-
-     $.ajax({   //iniciar ajax para crar token   
-    url: url+'/usuario/create',
-    data:$("#create").serialize(),
-    type: "POST",
-    dataType: "json",
-    headers:{
-      token: localStorage.getItem("token")
-    }
-})
- .done(function( data, textStatus, jqXHR ) { 
-  
-  if(data.id != null){
-
-    alert("Usuario "+data.nombre+" se creo correctamente!");
-
-    location.href="?";
-
-  }else{
-
-    alert("Hay algo mal en el formulario ");
-  }
- 
-
- }); 
-
-  }
-  function llenarForm(){ 
-  $.ajax({   //iniciar ajax para crar token   
-    url: url+'/usuario/show/'+ $("#id_editar").val(),
-    data: { },
-    type: "GET",
-    dataType: "json",
-    headers:{
-      token: localStorage.getItem("token")
-    }
-})
- .done(function( data, textStatus, jqXHR ) {  
- var usuario = data.usuario; 
-
- console.log(data.usuario);
-
-$("input[name='nombre']").val(usuario.nombre);
-$("input[name='domicilio']").val(usuario.domicilio);
-$("input[name='telefono']").val(usuario.telefono);
-$("input[name='correo']").val(usuario.correo);
- }); 
-
-}
-
-llenarForm();
-
-$('#editarModal').on('show.bs.modal', function (event) {
-           
-           var button = $(event.relatedTarget) // Button that triggered the modal
-           var id = button.data('id') ; 
-           var modal = $(this)
-           
-         
-           $("#id_editar").val(id)
-           /* 
-           modal.find('.modal-title').text('New message to ' + recipient)
-           modal.find('.modal-body input').val(recipient) */
-         })
-
-
-         function editar(){
-     $.ajax({   //iniciar ajax para editar registro   
-        url: url+'/usuario/update/' +$("#id_editar").val(),
-        data:$("#form_editar").serialize(),
-        type: "POST",
-        dataType: "json",
-        headers:{
-          token: localStorage.getItem("token")
         }
-    })
-    .done(function( data, textStatus, jqXHR ) {   
-  
-        if(data.data.id !== null){
-          alert(data.result);
-          location.href="?";
-        }else{
-          alert("Hay algo mal en el formulario ");
-        }   
 
-    }); 
+        $('#deleteModal').on('show.bs.modal', function(event) {
 
-  }
+            var button = $(event.relatedTarget)
+            var id = button.data('id');
+            var modal = $(this)
+
+            $("#id_eliminar").val(id)
+
+        })
 
 
+        function crear() {
+
+            $.ajax({
+                    url: url + '/usuario/create',
+                    data: $("#create").serialize(),
+                    type: "POST",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+
+                    if (data.id != null) {
+
+                        Swal.fire({
+                            title: 'Éxito!',
+                            text: 'El cliente se ha creado correctamente!',
+                        }).then(function() {
+                            location.reload();
+                        });
+
+                    } else {
+
+                        alert("Hay algo mal en el formulario ");
+                    }
+                });
+
+        }
+
+        function llenarForm() {
+            $.ajax({
+                    url: url + '/usuario/show/' + $("#id_editar").val(),
+                    data: {},
+                    type: "GET",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+                    var usuario = data.usuario;
+
+                    console.log(data.usuario);
+
+                    $("input[name='nombre']").val(usuario.nombre);
+                    $("input[name='domicilio']").val(usuario.domicilio);
+                    $("input[name='telefono']").val(usuario.telefono);
+                    $("input[name='correo']").val(usuario.correo);
+                });
+
+        }
+
+        llenarForm();
+
+        $('#editarModal').on('show.bs.modal', function(event) {
+
+            var button = $(event.relatedTarget)
+            var id = button.data('id');
+            var modal = $(this)
 
 
+            $("#id_editar").val(id)
+
+        })
+
+
+        function editar() {
+            $.ajax({
+                    url: url + '/usuario/update/' + $("#id_editar").val(),
+                    data: $("#form_editar").serialize(),
+                    type: "POST",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+
+                    if (data.data.id !== null) {
+                        Swal.fire({
+                            title: 'Éxito!',
+                            text: 'El cliente se ha editado correctamente!',
+                        }).then(function() {
+                            location.reload();
+                        });
+                    } else {
+                        alert("Hay algo mal en el formulario ");
+                    }
+
+                });
+
+        }
     </script>
 
     <!-- End of Scripts -->
