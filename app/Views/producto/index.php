@@ -28,10 +28,10 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Usuarios</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Productos</h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar un nuevo usuario</button>
+                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar un nuevo producto</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -39,35 +39,35 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Usuario <i class="fas fa-user"></i> </th>
-                                            <th>Domicilio <i class="fas fa-map-marked"></i> </th>
-                                            <th>Telefono <i class="fas fa-phone-square-alt"></i> </th>
-                                            <th>Correo <i class="fas fa-envelope-square"></i></i> </th>
+                                            <th>Nombre <i class="fas fa-user"></i> </th>
+                                            <th>Descripcion <i class="fas fa-map-marked"></i> </th>
+                                            <th>Cantidad <i class="fas fa-phone-square-alt"></i> </th>
+                                            <th>Precio <i class="fas fa-envelope-square"></i></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Usuario</th>
-                                            <th>Domicilio</th>
-                                            <th>Telefono</th>
-                                            <th>Correo</th>
+                                            <th>Nombre</th>
+                                            <th>Descripcion</th>
+                                            <th>Cantidad</th>
+                                            <th>Precio</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
 
-                                        <?php foreach ($usuarios as $usuario) { ?>
+                                        <?php foreach ($productos as $producto) { ?>
 
                                             <tr>
-                                                <td> <?= $usuario['id'] ?> </td>
-                                                <td> <?= $usuario['nombre'] ?> </td>
-                                                <td> <?= $usuario['domicilio'] ?> </td>
-                                                <td> <?= $usuario['telefono']  ?> </td>
-                                                <td> <?= $usuario['correo']  ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>">Editar</a>
-                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $usuario['id'] ?>">Eliminar</button>
+                                                <td> <?= $producto['id'] ?> </td>
+                                                <td> <?= $producto['nombre'] ?> </td>
+                                                <td> <?= $producto['descripcion'] ?> </td>
+                                                <td> <?= $producto['cantidad']  ?> </td>
+                                                <td> <?= $producto['precio']  ?> </td>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $producto['id'] ?>">Editar</a>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $producto['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>
 
@@ -105,13 +105,13 @@
     <?php echo view('modals/usuario/logout'); ?>
 
     <!-- Modal Create Product-->
-    <?php echo view('modals/usuario/crear'); ?>
+    <?php echo view('modals/producto/crear'); ?>
 
     <!-- Modal Edit Product-->
-    <?php echo view('modals/usuario/editar'); ?>
+    <?php echo view('modals/producto/editar'); ?>
 
     <!-- Modal Delete Product-->
-    <?php echo view('modals/usuario/eliminar'); ?>
+    <?php echo view('modals/producto/eliminar'); ?>
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
@@ -120,11 +120,11 @@
     <!-- NO FUNCIONA -->
     <script>
         //if(!localStorage.getItem("user")){
-        //  location.href="<?= base_url('usuario/login') ?>";
+        //  location.href="<?= base_url('producto/login') ?>";
         //}
 
         var user = JSON.parse(localStorage.getItem("user"));
-        //   $(".nombre-usuario").html(user.nombre);
+        //   $(".nombre-producto").html(user.nombre);
 
         function signout() {
             localStorage.removeItem("token");
@@ -145,7 +145,7 @@
         function eliminar() {
 
             $.ajax({
-                    url: url + '/usuario/delete/' + $("#id_eliminar").val(),
+                    url: url + '/producto/delete/' + $("#id_eliminar").val(),
                     data: {},
                     type: "POST",
                     dataType: "json",
@@ -184,7 +184,7 @@
         function crear() {
 
             $.ajax({
-                    url: url + '/usuario/create',
+                    url: url + '/producto/create',
                     data: $("#create").serialize(),
                     type: "POST",
                     dataType: "json",
@@ -213,7 +213,7 @@
 
         function llenarForm() {
             $.ajax({
-                    url: url + '/usuario/show/' + $("#id_editar").val(),
+                    url: url + '/producto/show/' + $("#id_editar").val(),
                     data: {},
                     type: "GET",
                     dataType: "json",
@@ -222,14 +222,14 @@
                     }
                 })
                 .done(function(data, textStatus, jqXHR) {
-                    var usuario = data.usuario;
+                    var producto = data.producto;
 
-                    console.log(data.usuario);
+                    console.log(data.producto);
 
-                    $("input[name='nombre']").val(usuario.nombre);
-                    $("input[name='domicilio']").val(usuario.domicilio);
-                    $("input[name='telefono']").val(usuario.telefono);
-                    $("input[name='correo']").val(usuario.correo);
+                    $("input[name='nombre']").val(producto.nombre);
+                    $("input[name='domicilio']").val(producto.domicilio);
+                    $("input[name='telefono']").val(producto.telefono);
+                    $("input[name='correo']").val(producto.correo);
                 });
 
         }
@@ -251,7 +251,7 @@
         function editar() {
             console.log($("#form_editar").serialize());
             $.ajax({
-                    url: url + '/usuario/update/' + $("#id_editar").val(),
+                    url: url + '/producto/update/' + $("#id_editar").val(),
                     data: $("#form_editar").serialize(),
                     type: "POST",
                     dataType: "json",

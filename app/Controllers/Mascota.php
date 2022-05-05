@@ -96,7 +96,7 @@ Class Mascota extends ResourceController {
         "raza" => $this->request->getPost('raza'),
         "descripcion" => $this->request->getPost('descripcion'),
         "idAnimal" => $this->request->getPost('idAnimal'),
-        "idCliente" => $this->request->getPost('idCliente')
+        "idUsuario" => $this->request->getPost('idUsuario')
        ];
 
        $id = $this->model->insert($data);
@@ -124,8 +124,8 @@ Class Mascota extends ResourceController {
         if(!empty($this->request->getPost('idAnimal')))
         $data["idAnimal"] = $this->request->getPost('idAnimal');
 
-        if(!empty($this->request->getPost('idCliente')))
-        $data["idCliente"] = $this->request->getPost('idCliente');
+        if(!empty($this->request->getPost('idUsuario')))
+        $data["idUsuario"] = $this->request->getPost('idUsuario');
 
         $result = $this->model->update($id,$data);
  

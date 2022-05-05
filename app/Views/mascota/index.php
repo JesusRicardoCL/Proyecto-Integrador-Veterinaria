@@ -68,7 +68,7 @@
                                                 <td> <?= $mascota['raza'] ?> </td>
                                                 <td> <?= $mascota['descripcion']  ?> </td>
                                                 <td> <?= $mascota['idAnimal']  ?> </td>
-                                                <td> <?= $mascota['idCliente']  ?> </td>
+                                                <td> <?= $mascota['idUsuario']  ?> </td>
                                                 <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $mascota['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $mascota['id'] ?>">Eliminar</button>
                                                 </td>
@@ -229,10 +229,15 @@
 
                     console.log(data.mascota);
 
+                    $("select[name='idUsuario'] option[value='"+mascota.idUsuario+"']").attr("selected","selected" );
+                    $("select[name='idAnimal'] option[value='"+mascota.idAnimal+"']").attr("selected","selected" );
                     $("input[name='nombre']").val(mascota.nombre);
-                    $("input[name='domicilio']").val(mascota.domicilio);
-                    $("input[name='telefono']").val(mascota.telefono);
+                    $("input[name='raza']").val(mascota.raza);
+                    $("input[name='descripcion']").val(mascota.descripcion);
                     $("input[name='correo']").val(mascota.correo);
+                    
+
+
                 });
 
         }
@@ -252,6 +257,10 @@
 
 
         function editar() {
+
+            console.log('aaaaaaaa');
+            console.log($("#form_editar").serialize());
+
             $.ajax({
                     url: url + '/mascota/update/' + $("#id_editar").val(),
                     data: $("#form_editar").serialize(),
@@ -263,10 +272,12 @@
                 })
                 .done(function(data, textStatus, jqXHR) {
 
+                    
+
                     if (data.data.id !== null) {
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'El cliente se ha editado correctamente!',
+                            text: 'La mascota se ha editado correctamente!',
                         }).then(function() {
                             location.reload();
                         });

@@ -1,0 +1,585 @@
+ERROR - 2022-05-05 11:11:55 --> Table 'vet_db.usuarios' doesn't exist
+CRITICAL - 2022-05-05 11:11:55 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\laragon\www\vet\app\Controllers\Usuario.php(15): CodeIgniter\BaseModel->findAll()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->index()
+#3 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#4 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-05-05 11:12:02 --> Table 'vet_db.usuarios' doesn't exist
+CRITICAL - 2022-05-05 11:12:02 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\laragon\www\vet\app\Controllers\Usuario.php(15): CodeIgniter\BaseModel->findAll()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->index()
+#3 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#4 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-05-05 11:12:18 --> Table 'vet_db.usuarios' doesn't exist
+CRITICAL - 2022-05-05 11:12:18 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\laragon\www\vet\app\Controllers\Usuario.php(15): CodeIgniter\BaseModel->findAll()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->index()
+#3 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#4 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-05-05 11:23:21 --> Unknown column 'm.idCliente' in 'on clause'
+CRITICAL - 2022-05-05 11:23:21 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Mascota.php(53): App\Models\MascotaModel->getMascotas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-05 12:05:12 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('33', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('33')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:05:31 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('33', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('33')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:06:15 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('33', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('33')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:06:27 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('33', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('33')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:07:31 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('36', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('36')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:08:12 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('36', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('36')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:09:11 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('36', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('36')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:09:29 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('36', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('36')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:11 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:15 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:15 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:15 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:15 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:16 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:17 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:18 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:20 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:21 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:21 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:11:21 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:12:25 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('33', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('33')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:13:32 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:14:05 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Mascota.php(130): CodeIgniter\Model->update('37', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Mascota->update('37')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mascota))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-05 12:15:43 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Usuario.php(88): CodeIgniter\Model->update('8', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->update('8')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -3,18 +3,18 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Agregar una nueva mascota</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer; font-size: 1.5em"></i>
             </div>
             <div class="modal-body">
                 <form id="create">
                     <div class="mb-3">
                         <label>Dueño:</label>
-                        <select name="idCliente" class="form-control">
-                            <option id="idCliente" value="0">Sin dueño</option>
+                        <select name="idUsuario" class="form-control">
+                            <option id="idUsuario" value="0">Sin dueño</option>
 
                             <?php foreach ($usuarios as $usuario) { ?>
 
-                                <option id="idCliente" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
+                                <option id="idUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
 
                             <?php  } ?>
 
