@@ -159,7 +159,7 @@
 
                     Swal.fire({
                         title: 'Éxito!',
-                        text: 'El cliente se ha eliminado correctamente!',
+                        text: 'El producto se ha eliminado correctamente!',
                         type: 'sucess'
                     }).then(function() {
                         location.reload();
@@ -198,7 +198,7 @@
 
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'El cliente se ha creado correctamente!',
+                            text: 'El producto se ha creado correctamente!',
                         }).then(function() {
                             location.reload();
                         });
@@ -227,14 +227,14 @@
                     console.log(data.producto);
 
                     $("input[name='nombre']").val(producto.nombre);
-                    $("input[name='domicilio']").val(producto.domicilio);
-                    $("input[name='telefono']").val(producto.telefono);
-                    $("input[name='correo']").val(producto.correo);
+                    $("input[name='descripcion']").val(producto.descripcion);
+                    $("input[name='cantidad']").val(producto.cantidad);
+                    $("input[name='precio']").val(producto.precio);
                 });
 
         }
 
-        llenarForm();
+        
 
         $('#editarModal').on('show.bs.modal', function(event) {
 

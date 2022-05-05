@@ -583,3 +583,48 @@ CRITICAL - 2022-05-05 12:15:43 --> There is no data to update.
 #6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-05-05 12:57:40 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Producto->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-05 12:58:46 --> Invalid file: modals/producto/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/producto...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/producto...', Array, true)
+#2 C:\laragon\www\vet\app\Views\producto\index.php(108): view('modals/producto...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('producto/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Producto.php(21): view('producto/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Producto->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-05 13:00:04 --> Invalid file: modals/producto/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/producto...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/producto...', Array, true)
+#2 C:\laragon\www\vet\app\Views\producto\index.php(108): view('modals/producto...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('producto/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Producto.php(21): view('producto/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Producto->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-05 13:00:11 --> Invalid file: modals/producto/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/producto...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/producto...', Array, true)
+#2 C:\laragon\www\vet\app\Views\producto\index.php(108): view('modals/producto...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('producto/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Producto.php(21): view('producto/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Producto->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
