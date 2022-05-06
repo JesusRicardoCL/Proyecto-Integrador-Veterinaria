@@ -28,7 +28,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Productos</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Ventas</h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar un nuevo producto</button>
@@ -186,7 +186,7 @@
 
             $.ajax({
               
-                    url: url + '/venta/',
+                    url: url + '/venta/create',
                     data: $("#create").serialize(),
                     type: "POST",
                     dataType: "json",

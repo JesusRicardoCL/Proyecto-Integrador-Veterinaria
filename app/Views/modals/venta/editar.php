@@ -18,7 +18,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">fecha:</label>
-                            <input type="date" class="form-control" name="fecha">
+                            <input type="text" class="form-control" name="fecha">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Precio:</label>
