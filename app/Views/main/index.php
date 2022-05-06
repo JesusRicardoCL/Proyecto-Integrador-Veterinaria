@@ -73,6 +73,15 @@
                                     </center>
                                 </a>
                             </div>
+                            <div class="col" style="margin: 20px; height: 160px; width: 30%; border: 2px solid #d9d9d9; border-radius: 20px; padding: 20px; float: left; ">
+                                <a class="nav-link" href="<?= base_url('animal/index'); ?>" style="font-size:26px;">
+                                    <center>
+                                        <i class="fas fa-fw fa-paw" style="font-size:60px"></i>
+                                        <br />
+                                        <span>cccc</span>
+                                    </center>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

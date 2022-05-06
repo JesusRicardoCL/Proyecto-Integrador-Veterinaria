@@ -28,10 +28,10 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Mascotas</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Productos</h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                        <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar una nueva mascota</button>
+                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar un nuevo producto</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -39,42 +39,40 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Nombre <i class="fas fa-user"></i> </th>
-                                            <th>Raza <i class="fas fa-map-marked"></i> </th>
-                                            <th>Descripción <i class="fas fa-phone-square-alt"></i> </th>
-                                            <th>Animal <i class="fas fa-envelope-square"></i></i> </th>
-                                            <th>Cliente <i class="fas fa-fw fa-edit"></i></th>
+                                            <th>Producto <i class="fas fa-user"></i> </th>
+                                            <th>Descripcion <i class="fas fa-map-marked"></i> </th>
+                                            <th>Fecha <i class="fas fa-phone-square-alt"></i> </th>
+                                            <th>Total <i class="fas fa-envelope-square"></i></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Nombre</th>
-                                            <th>Raza</th>
-                                            <th>Descripción</th>
-                                            <th>Animal</th>
-                                            <th>Cliente</th>
-                                            <th>Acciones</i></th>
+                                            <th>Producto</th>
+                                            <th>Descripcion</th>
+                                            <th>Fecha</th>
+                                            <th>Total</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
 
-                                        <?php foreach ($mascotas as $mascota) { ?>
+                                      <?php foreach ($ventas as $venta) { ?>
 
                                             <tr>
-                                                <td> <?= $mascota['id'] ?> </td>
-                                                <td> <?= $mascota['nombre'] ?> </td>
-                                                <td> <?= $mascota['raza'] ?> </td>
-                                                <td> <?= $mascota['descripcion']  ?> </td>
-                                                <td> <?= $mascota['idAnimal']  ?> </td>
-                                                <td> <?= $mascota['idUsuario'] ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $mascota['id'] ?>">Editar</a>
-                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $mascota['id'] ?>">Eliminar</button>
+                                                <td> <?= $venta['id'] ?> </td>
+                                                <td> <?= $venta['productos'] ?> </td>
+                                                <td> <?= $venta['descripcion'] ?> </td>
+                                                <td> <?= $venta['fecha']  ?> </td>
+                                                <td> <?= $venta['total']  ?> </td>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $venta['id'] ?>">Editar</a>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $venta['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>
 
                                         <?php  } ?>
+                                        
 
                                     </tbody>
                                 </table>
@@ -108,25 +106,26 @@
     <?php echo view('modals/usuario/logout'); ?>
 
     <!-- Modal Create Product-->
-    <?php echo view('modals/mascota/crear'); ?>
+    <?php echo view('modals/venta/crear'); ?>
 
     <!-- Modal Edit Product-->
-    <?php echo view('modals/mascota/editar'); ?>
+    <?php echo view('modals/venta/editar'); ?>
 
     <!-- Modal Delete Product-->
-    <?php echo view('modals/mascota/eliminar'); ?>
+    <?php echo view('modals/venta/eliminar'); ?>
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
 
-
+    <!-- Script para comprobar que haya un usuario con sesion iniciada -->
+    <!-- NO FUNCIONA -->
     <script>
         //if(!localStorage.getItem("user")){
-        //  location.href="<?= base_url('usuario/login') ?>";
+        //  location.href="<?= base_url('producto/login') ?>";
         //}
 
         var user = JSON.parse(localStorage.getItem("user"));
-        $(".nombre-usuario").html(user.nombre);
+        //   $(".nombre-producto").html(user.nombre);
 
         function signout() {
             localStorage.removeItem("token");
@@ -147,7 +146,7 @@
         function eliminar() {
 
             $.ajax({
-                    url: url + '/mascota/delete/' + $("#id_eliminar").val(),
+                    url: url + '/venta/delete/' + $("#id_eliminar").val(),
                     data: {},
                     type: "POST",
                     dataType: "json",
@@ -161,7 +160,7 @@
 
                     Swal.fire({
                         title: 'Éxito!',
-                        text: 'La mascota se ha eliminado correctamente!',
+                        text: 'La venta se ha eliminado correctamente!',
                         type: 'sucess'
                     }).then(function() {
                         location.reload();
@@ -186,7 +185,8 @@
         function crear() {
 
             $.ajax({
-                    url: url + '/mascota/create',
+              
+                    url: url + '/venta/',
                     data: $("#create").serialize(),
                     type: "POST",
                     dataType: "json",
@@ -200,9 +200,8 @@
 
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'La mascota se ha creado correctamente!',
+                            text: 'La venta se ha creado correctamente!',
                         }).then(function() {
-
                             location.reload();
                         });
 
@@ -216,7 +215,7 @@
 
         function llenarForm() {
             $.ajax({
-                    url: url + '/mascota/show/' + $("#id_editar").val(),
+                    url: url + '/venta/show/' + $("#id_editar").val(),
                     data: {},
                     type: "GET",
                     dataType: "json",
@@ -225,24 +224,19 @@
                     }
                 })
                 .done(function(data, textStatus, jqXHR) {
-                    var mascota = data.mascota;
+                    var venta = data.venta;
 
-                    console.log(data.mascota);
+                    console.log(data.venta);
 
-                    $("select[name='idUsuario'] option[value='"+mascota.idUsuario+"']").attr("selected","selected" );
-                    $("select[name='idAnimal'] option[value='"+mascota.idAnimal+"']").attr("selected","selected" );
-                    $("input[name='nombre']").val(mascota.nombre);
-                    $("input[name='raza']").val(mascota.raza);
-                    $("input[name='descripcion']").val(mascota.descripcion);
-                    $("input[name='correo']").val(mascota.correo);
-                    
-
-
+                    $("input[name='productos']").val(venta.productos);
+                    $("input[name='descripcion']").val(venta.descripcion);
+                    $("input[name='fecha']").val(venta.fecha);
+                    $("input[name='total']").val(venta.total);
                 });
 
         }
 
-        llenarForm();
+        
 
         $('#editarModal').on('show.bs.modal', function(event) {
 
@@ -257,12 +251,9 @@
 
 
         function editar() {
-
-            console.log('aaaaaaaa');
             console.log($("#form_editar").serialize());
-
             $.ajax({
-                    url: url + '/mascota/update/' + $("#id_editar").val(),
+                    url: url + '/venta/update/' + $("#id_editar").val(),
                     data: $("#form_editar").serialize(),
                     type: "POST",
                     dataType: "json",
@@ -272,12 +263,10 @@
                 })
                 .done(function(data, textStatus, jqXHR) {
 
-                    
-
                     if (data.data.id !== null) {
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'La mascota se ha editado correctamente!',
+                            text: 'El cliente se ha editado correctamente!',
                         }).then(function() {
                             location.reload();
                         });
@@ -289,6 +278,7 @@
 
         }
     </script>
+
     <!-- End of Scripts -->
 
 </body>

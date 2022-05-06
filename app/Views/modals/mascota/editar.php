@@ -28,7 +28,7 @@
                     <div class="mb-3">
                         <label>Animal:</label>
                         <select name="idAnimal" class="form-control" id="cliente">
-                            <option id="idAnimal" value="0">Sin dueño</option>
+                            <option id="idAnimal" value="0">Sin datos</option>
 
                             <?php foreach ($animales as $animal) { ?>
 

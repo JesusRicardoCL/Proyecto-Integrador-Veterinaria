@@ -38,9 +38,10 @@
                 <a class="collapse-item" href="<?= base_url('usuario/index'); ?>">Usuarios</a>
                 <a class="collapse-item" href="<?= base_url('mascota/index'); ?>">Mascotas</a>
                 <a class="collapse-item" href="<?= base_url('animal/index'); ?>">Animales</a>
-                <a class="collapse-item" href="<?= base_url('producto/index'); ?>")">Productos</a>
-                <a class="collapse-item" href="<?= base_url('venta/index'); ?>")">Ventas</a>
+                <a class="collapse-item" href="<?= base_url('producto/index'); ?>">Productos</a>
+                <a class="collapse-item" href="<?= base_url('venta/index'); ?>">Ventas</a>
                 <a class="collapse-item" href="<?= base_url('cita/index'); ?>">Citas</a>
+               
             </div>
         </div>
     </li>
