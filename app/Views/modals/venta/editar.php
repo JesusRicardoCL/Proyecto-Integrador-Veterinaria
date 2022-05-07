@@ -10,19 +10,19 @@
                         <input id="id_editar" type="hidden">
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Productos:</label>
-                            <input type="text" class="form-control" name="productos">
+                            <input type="text" class="form-control" name="editar_productos">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Descripcion:</label>
-                            <input type="text" class="form-control" name="descripcion">
+                            <input type="text" class="form-control" name="editar_descripcion">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">fecha:</label>
-                            <input type="text" class="form-control" name="fecha">
+                            <input type="text" class="form-control" name="editar_fecha">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Precio:</label>
-                            <input type="text" class="form-control" name="total">
+                            <input type="text" class="form-control" name="editar_total">
                         </div>
                     </form>
                 </div>

@@ -802,3 +802,76 @@ CRITICAL - 2022-05-06 17:41:30 --> Invalid argument supplied for foreach()
 #11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 {main}
+CRITICAL - 2022-05-06 18:36:43 --> Invalid file: cita/index.php
+#0 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cita/index.php')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('cita/index', Array, true)
+#2 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Cita.php(23): view('cita/index', Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-06 18:36:53 --> Invalid file: cita/index.php
+#0 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cita/index.php')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('cita/index', Array, true)
+#2 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Cita.php(23): view('cita/index', Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-06 18:58:22 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\modals\venta\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 15, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/venta/cr...', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Views\venta\index.php(109): view('modals/venta/cr...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('venta/index', Array, true)
+#8 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Venta.php(17): view('venta/index', Array)
+#9 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->index()
+#10 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#11 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-05-06 21:16:24 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:16:31 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:16:34 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:17:01 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:17:07 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:17:19 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:18:33 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:23:50 --> Column 'productos' cannot be null
+ERROR - 2022-05-06 21:25:48 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:26:49 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:27:42 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:27:49 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:27:49 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:27:49 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:28:03 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-06 21:29:52 --> Column 'descripcion' cannot be null
+CRITICAL - 2022-05-06 21:33:51 --> There is no data to insert.
+#0 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Venta.php(43): CodeIgniter\Model->insert(Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-06 21:35:51 --> Call to a member function insert() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-06 21:42:58 --> Invalid file: cita/index.php
+#0 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cita/index.php')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('cita/index', Array, true)
+#2 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Cita.php(23): view('cita/index', Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

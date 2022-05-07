@@ -31,7 +31,7 @@
                     <h1 class="h3 mb-4 text-gray-800">Ventas</h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar un nuevo producto</button>
+                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar una nueva venta</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -39,7 +39,7 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Producto <i class="fas fa-user"></i> </th>
+                                            <th>Productos <i class="fas fa-user"></i> </th>
                                             <th>Descripcion <i class="fas fa-map-marked"></i> </th>
                                             <th>Fecha <i class="fas fa-phone-square-alt"></i> </th>
                                             <th>Total <i class="fas fa-envelope-square"></i></i> </th>
@@ -49,7 +49,7 @@
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Producto</th>
+                                            <th>Productos</th>
                                             <th>Descripcion</th>
                                             <th>Fecha</th>
                                             <th>Total</th>
@@ -184,6 +184,8 @@
 
         function crear() {
 
+            console.log($("#create").serialize());
+
             $.ajax({
               
                     url: url + '/venta/create',
@@ -228,10 +230,10 @@
 
                     console.log(data.venta);
 
-                    $("input[name='productos']").val(venta.productos);
-                    $("input[name='descripcion']").val(venta.descripcion);
-                    $("input[name='fecha']").val(venta.fecha);
-                    $("input[name='total']").val(venta.total);
+                    $("input[name='editar_productos']").val(venta.productos);
+                    $("input[name='editar_descripcion']").val(venta.descripcion);
+                    $("input[name='editar_fecha']").val(venta.fecha);
+                    $("input[name='editar_total']").val(venta.total);
                 });
 
         }
