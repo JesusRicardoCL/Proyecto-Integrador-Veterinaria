@@ -47,8 +47,9 @@ Class Cita extends ResourceController {
     public function create(){
 
        $data=[
-        "idCliente" => $this->request->getPost('idCliente'),
+        "idUsuario" => $this->request->getPost('idUsuario'),
         "idMascota" => $this->request->getPost('idMascota'),
+        "descripcion" => $this->request->getPost('descripcion'),
         "fecha" => $this->request->getPost('fecha'),
         "hora" => $this->request->getPost('hora'),
         "ubicacion" => $this->request->getPost('ubicacion'),
@@ -67,11 +68,14 @@ Class Cita extends ResourceController {
 
         $data = [];
 
-        if(!empty($this->request->getPost('idCliente')))
-        $data["idCliente"] = $this->request->getPost('idCliente');
+        if(!empty($this->request->getPost('idUsuario')))
+        $data["idUsuario"] = $this->request->getPost('idUsuario');
         
         if(!empty($this->request->getPost('idMascota')))
         $data["idMascota"] = $this->request->getPost('idMascota');
+
+        if(!empty($this->request->getPost('descripcion')))
+        $data["descripcion"] = $this->request->getPost('descripcion');
 
         if(!empty($this->request->getPost('fecha')))
         $data["fecha"] = $this->request->getPost('fecha');

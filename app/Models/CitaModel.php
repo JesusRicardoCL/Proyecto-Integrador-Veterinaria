@@ -10,8 +10,9 @@ class CitaModel extends Model {
     protected $primaryKey = "id";
     protected $allowedFields = [
         "id",
-        "idCliente",
+        "idUsuario",
         "idMascota",
+        "descripcion",
         "fecha",
         "hora",
         "ubicacion"
