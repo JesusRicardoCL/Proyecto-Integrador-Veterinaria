@@ -70,8 +70,8 @@
                                                 <td> <?= $cita['idMascota'] ?> </td>
                                                 <td> <?= $cita['descripcion'] ?> </td>
                                                 <td> <?= $cita['fecha']  ?> </td>
-                                                <td> <?= $cita['Hora']  ?> </td>
-                                                <td> <?= $cita['Ubicación'] ?> </td>
+                                                <td> <?= $cita['hora']  ?> </td>
+                                                <td> <?= $cita['ubicacion'] ?> </td>
                                                 <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $cita['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $cita['id'] ?>">Eliminar</button>
                                                 </td>
@@ -219,7 +219,7 @@
 
         function llenarForm() {
             $.ajax({
-                    url: url + '/cita/show/' + $("#id_editar").val(),
+                    url: url + '/cita/show/'+ $("#id_editar").val(),
                     data: {},
                     type: "GET",
                     dataType: "json",
@@ -228,19 +228,54 @@
                     }
                 })
                 .done(function(data, textStatus, jqXHR) {
-                    var usuario = data.cita;
+                    var cita = data.cita;
 
                     console.log(data.cita);
 
-                    $("input[name='usuario']").val(cita.usuario);
-                    $("input[name='mascota']").val(cita.mascota);
+                    $("select[name='idUsuario'] option[value='"+cita.idUsuario+"']").attr("selected","selected" );
+                    $("select[name='idMascota'] option[value='"+cita.idMascota+"']").attr("selected","selected" );
                     $("input[name='descripcion']").val(cita.descripcion);
                     $("input[name='fecha']").val(cita.fecha);
+                    $("input[name='hora']").val(cita.hora);
+                    $("input[name='ubicacion']").val(cita.ubicacion);
+                    
                 });
 
         }
 
         llenarForm();
+
+        /*
+        function llenarForm() {
+            $.ajax({
+                    url: url + '/mascota/show/' + $("#id_editar").val(),
+                    data: {},
+                    type: "GET",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+                    var mascota = data.mascota;
+
+                    console.log(data.mascota);
+
+                    $("select[name='idUsuario'] option[value='"+mascota.idUsuario+"']").attr("selected","selected" );
+                    $("select[name='idAnimal'] option[value='"+mascota.idAnimal+"']").attr("selected","selected" );
+                    $("input[name='nombre']").val(mascota.nombre);
+                    $("input[name='raza']").val(mascota.raza);
+                    $("input[name='descripcion']").val(mascota.descripcion);
+                    $("input[name='correo']").val(mascota.correo);
+                    
+
+
+                });
+
+        }
+
+        llenarForm();*/
+
 
         $('#editarModal').on('show.bs.modal', function(event) {
 

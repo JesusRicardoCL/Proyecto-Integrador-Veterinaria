@@ -14,19 +14,19 @@
 
                             <?php foreach ($usuarios as $usuario) { ?>
 
-                                <option id="idUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
+                                <option  id="idUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
 
                             <?php  } ?>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label>Seleccione la mascota</label>
-                        <select name="idUsuario" class="form-control">
-                            <option id="idUsuario" value="0">Sin cliente</option>
+                        <select name="idMascota" class="form-control">
+                            <option id="idMascota" value="0">Sin cliente</option>
 
                             <?php foreach ($mascotas as $mascota) { ?>
 
-                                <option id="idMascota" value="<?= $mascota['id'] ?>" }><?= $mascota['nombre'] ?></option>
+                                <option  id="idMascota" value="<?= $mascota['id'] ?>" }><?= $mascota['nombre'] ?></option>
 
                             <?php  } ?>
                         </select>

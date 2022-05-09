@@ -1,0 +1,344 @@
+ERROR - 2022-05-09 14:15:56 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-05-09 14:15:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\laragon\www\vet\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\vet\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\laragon\www\vet\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\vet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\vet\app\Controllers\Usuario.php(15): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Usuario->index()
+#6 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-09 14:20:04 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\cita\index.php(114): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('cita/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Cita.php(23): view('cita/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-09 14:21:21 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\cita\index.php(114): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('cita/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Cita.php(23): view('cita/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-09 14:32:46 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 14:32:48 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 14:32:49 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 14:32:49 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 14:32:49 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 14:32:49 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 14:32:49 --> Call to undefined method App\Models\CitaModel::getCitas
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(37): CodeIgniter\Model->__call('getCitas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 14:39:11 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:39:21 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:43:40 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:43:44 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:50:02 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:52:14 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:52:43 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:57:19 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:57:22 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:57:29 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 14:58:57 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 18:02:52 --> Unknown column 'idUsuario' in 'field list'
+ERROR - 2022-05-09 18:12:39 --> Error connecting to the database: Unknown database 'vet_db'
+CRITICAL - 2022-05-09 18:12:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'vet_db'
+#0 C:\laragon\www\vet\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\vet\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `c`.*, `...', Array, false)
+#2 C:\laragon\www\vet\app\Models\CitaModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-05-09 18:18:37 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:18:37 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:18:39 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:18:39 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:18:41 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:18:41 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:18:41 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:18:41 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:18:49 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:18:49 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-09 18:19:29 --> Call to a member function insert() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-09 18:19:32 --> Call to a member function insert() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-09 18:19:46 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:19:46 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:41 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:41 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:42 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:42 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:43 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:43 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:43 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:43 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:43 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:43 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:44 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:44 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:20:44 --> Unknown column 'c.idCliente' in 'on clause'
+CRITICAL - 2022-05-09 18:20:44 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\vet\app\Controllers\Cita.php(36): App\Models\CitaModel->getCitas()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-09 18:21:33 --> Column 'idUsuario' cannot be null
+ERROR - 2022-05-09 18:21:37 --> Column 'idUsuario' cannot be null
+CRITICAL - 2022-05-09 18:28:30 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:28:31 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:28:31 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:28:31 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:28:38 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:28:50 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:28:51 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('undefined', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('undefined')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:30:05 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('1', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('1')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:30:15 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('1', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('1')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:30:32 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('1', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('1')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 18:30:34 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Cita.php(119): CodeIgniter\Model->update('1', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Cita->update('1')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

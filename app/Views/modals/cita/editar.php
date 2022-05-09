@@ -6,7 +6,8 @@
                     <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer; font-size: 1.5em"></i>
                 </div>
                 <div class="modal-body">
-                <form id="create">
+                <form id="form_editar">
+                <input id="id_editar" type="hidden">
                     <div class="mb-3">
                         <label>Seleccione un cliente</label>
                         <select name="idUsuario" class="form-control">
@@ -21,8 +22,8 @@
                     </div>
                     <div class="mb-3">
                         <label>Seleccione la mascota</label>
-                        <select name="idUsuario" class="form-control">
-                            <option id="idUsuario" value="0">Sin cliente</option>
+                        <select name="idMascota" class="form-control">
+                            <option id="idMascota" value="0">Sin Maascota</option>
 
                             <?php foreach ($mascotas as $mascota) { ?>
 

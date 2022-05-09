@@ -13,10 +13,41 @@ Class Cita extends ResourceController {
     protected $modelName = 'App\Models\CitaModel';
     protected $format = 'json';
 
+
+
+
+    public function innerJoinMethod()
+    {
+
+        $db = db_connect();
+        $model = new CitaModel($db);
+        $result = $this->model->getCitas();
+        echo '<pre>';
+            print_r($result);
+        echo '<pre>';
+
+      
+        
+    }
+
     public function index(){
+        $db = db_connect();
+        $model = new CitaModel($db);
+        $result = $this->model->getCitas();
+
+        echo $result;
+
+        
+    
+        $usuarioModel = new UsuarioModel();
+        $mascotaModel = new MascotaModel();
+        
+       
        
         $data=[
             "citas" => $this->model->findAll(),
+            "usuarios" => $usuarioModel->findAll(),
+            "mascotas" => $mascotaModel->findAll(),
             
          ]; 
 
