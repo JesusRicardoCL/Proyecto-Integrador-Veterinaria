@@ -35,7 +35,7 @@ Class Cita extends ResourceController {
         $model = new CitaModel($db);
         $result = $this->model->getCitas();
 
-        echo $result;
+       
 
         
     
@@ -45,9 +45,10 @@ Class Cita extends ResourceController {
        
        
         $data=[
-            "citas" => $this->model->findAll(),
+            "citas" => $this->model->getCitas(),
             "usuarios" => $usuarioModel->findAll(),
             "mascotas" => $mascotaModel->findAll(),
+            
             
          ]; 
 

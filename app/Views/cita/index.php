@@ -66,8 +66,8 @@
 
                                             <tr>
                                                 <td> <?= $cita['id'] ?> </td>
-                                                <td> <?= $cita['idUsuario'] ?> </td>
-                                                <td> <?= $cita['idMascota'] ?> </td>
+                                                <td> <?= $cita['cliente'] ?> </td>
+                                                <td> <?= $cita['mascota'] ?> </td>
                                                 <td> <?= $cita['descripcion'] ?> </td>
                                                 <td> <?= $cita['fecha']  ?> </td>
                                                 <td> <?= $cita['hora']  ?> </td>

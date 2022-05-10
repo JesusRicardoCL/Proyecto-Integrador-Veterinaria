@@ -28,13 +28,15 @@ class MascotaModel extends Model {
 
     public function getMascotas(){
 
-        return  json_encode($this->db->table('mascotas as m')
+        return  $this->db->table('mascotas as m')
         ->select('m.*, a.nombre as animal, u.nombre as cliente')
         ->join('animales as a','m.idAnimal = a.id')
         ->join('usuarios as u','m.idUsuario = u.id')
         ->get()
-        ->getResult());
+        ->getResultArray();
 
+
+        
 /*
         return $this->db->table('mascotas as m')
         ->select('m.*, a.nombre as animal, u.nombre as cliente')

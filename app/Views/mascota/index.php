@@ -58,22 +58,27 @@
                                             <th>Acciones</i></th>
                                         </tr>
                                     </tfoot>
-                                    <tbody>
-
+                                    
+                                    <tbody> 
+                                    
                                         <?php foreach ($mascotas as $mascota) { ?>
+                                           
 
                                             <tr>
                                                 <td> <?= $mascota['id'] ?> </td>
                                                 <td> <?= $mascota['nombre'] ?> </td>
                                                 <td> <?= $mascota['raza'] ?> </td>
                                                 <td> <?= $mascota['descripcion']  ?> </td>
-                                                <td> <?= $mascota['idAnimal']  ?> </td>
-                                                <td> <?= $mascota['idUsuario'] ?> </td>
+                                                <td> <?= $mascota['animal']  ?> </td>
+                                            
+                                                <td> <?= $mascota['cliente']?> </td>
+
+                                                
                                                 <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $mascota['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $mascota['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>
-
+                                          
                                         <?php  } ?>
 
                                     </tbody>

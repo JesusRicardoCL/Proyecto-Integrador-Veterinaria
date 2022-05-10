@@ -51,16 +51,16 @@ Class Mascota extends ResourceController {
         $db = db_connect();
         $model = new MascotaModel($db);
         $result = $this->model->getMascotas();
-
-        echo $result;
+ 
 
         $usuarioModel = new UsuarioModel();
         $animalModel = new AnimalModel();
         
         $data=[
-            "mascotas" => $this->model->findAll(),
-            "usuarios" => $usuarioModel->findAll(),
-            "animales" => $animalModel->findAll(),
+
+             "mascotas" => $this->model->getMascotas(), 
+             "usuarios" => $usuarioModel->findAll(),
+             "animales" => $animalModel->findAll(),
          ]; 
 
         echo view('mascota/index',$data);

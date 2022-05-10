@@ -37,7 +37,7 @@ Class Auth extends ResourceController{
             $key = Services::getSecretKey();
             $user_id = $this->usuario["id"];
             $payload = [
-                'aud' => "http://VetPet.site",
+                'aud' => "http://SusVet.com",
                 'iat' => $now, //Cuando se creo
                 'nbf' => $now, //Cuando se empezara a utilizar
                 //'exp' => $now+(60*60*24*7),
