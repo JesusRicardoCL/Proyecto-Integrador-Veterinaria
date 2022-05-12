@@ -23,7 +23,7 @@ Class Usuario extends Auth{
         
         echo view('usuario/login');
     }
-
+/*
     public function auth(){
 
         $telefono = trim($this->request->getPost('telefono'));
@@ -43,7 +43,7 @@ Class Usuario extends Auth{
 		return redirect()->to(base_url('usuario/index'));
 
     }
-
+*/
     public function showAll(){
         
         $data=[

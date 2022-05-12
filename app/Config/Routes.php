@@ -40,7 +40,7 @@ $routes->get('inner-join', 'Site::innerJoinMethod');
 //$routes->resource('mascota');
 //$routes->resource('producto');
 //$routes->resource('vacuna');
-//$routes->resource('venta');
+$routes->resource('auth');
 
 /*
  * --------------------------------------------------------------------
