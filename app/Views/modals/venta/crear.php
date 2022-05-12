@@ -103,7 +103,7 @@
         $.ajax({
 
                 url: url + '/venta/add_cart',
-                data: $("#addCart").serialize()+"&nombre="+$("#idProducto option:selected").text(),
+                data: $("#addCart").serialize()+"&nombre="+$("#idProducto option:selected").text(), 
                 type: "POST",
                 dataType: "json",
                 headers: {

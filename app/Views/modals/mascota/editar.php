@@ -10,12 +10,12 @@
                     <input id="id_editar" type="hidden">
                     <div class="mb-3">
                         <label>Dueño:</label>
-                        <select id="idUsuario" name="idUsuario" class="form-control">
-                            <option id="idUsuario" value="0">Sin dueño</option>
+                        <select id="idUsuarioEditar" name="idUsuario" class="form-control">
+                            <option id="opcionUsuario" value="0">Sin dueño</option>
 
                             <?php foreach ($usuarios as $usuario) { ?>
 
-                                <option id="idUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
+                                <option id="opcionUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
 
                             <?php  } ?>
 
@@ -23,16 +23,16 @@
                     </div>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Nombre:</label>
-                        <input type="text" class="form-control" name="nombre">
+                        <input id="idNombre" type="text" class="form-control" name="nombre">
                     </div>
                     <div class="mb-3">
                         <label>Animal:</label>
-                        <select name="idAnimal" class="form-control" id="cliente">
-                            <option id="idAnimal" value="0">Sin datos</option>
+                        <select id="idAnimalEditar" name="idAnimal" class="form-control" id="cliente">
+                            <option id="opcionAnimal" value="0">Sin datos</option>
 
                             <?php foreach ($animales as $animal) { ?>
 
-                                <option id="idAnimal" value="<?= $animal['id'] ?>" }><?= $animal['nombre'] ?></option>
+                                <option id="opcionAnimal" value="<?= $animal['id'] ?>" }><?= $animal['nombre'] ?></option>
 
                             <?php  } ?>
 
@@ -40,11 +40,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Raza:</label>
-                        <input type="text" class="form-control" name="raza">
+                        <input id="idRaza" type="text" class="form-control" name="raza">
                     </div>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Descripcion:</label>
-                        <input type="text" class="form-control" name="descripcion">
+                        <input id="idDescripcion" type="text" class="form-control" name="descripcion">
                     </div>
                 </form>
             </div>

@@ -19,10 +19,6 @@ Class Auth extends ResourceController{
 
     protected $tipoUsuario;
 
-    public function __construct(){
-
-    }
-
     public function create(){
 
         $user = $this->request->getPost("user");
@@ -30,14 +26,14 @@ Class Auth extends ResourceController{
         $tipo = $this->request->getPost("tipo");
         
         $usuarioModel = new UsuarioModel();
-        $this->usuario = $usuarioModel->login($user,$password);
+        $this->usuario = $usuarioModel->login($user,$password); 
 
         if($this->usuario){
             $now = time();
             $key = Services::getSecretKey();
             $user_id = $this->usuario["id"];
             $payload = [
-                'aud' => "http://SusVet.com",
+                'aud' => "http://vetpet.site",
                 'iat' => $now, //Cuando se creo
                 'nbf' => $now, //Cuando se empezara a utilizar
                 //'exp' => $now+(60*60*24*7),
@@ -72,17 +68,17 @@ Class Auth extends ResourceController{
             $usuarioModel = new usuarioModel();
             $this->usuario = $usuarioModel->find($token->data->user_id);
 
-            if($token->data->tipo == 0){
+            if($token->data->tipo == '0'){
 
-                $this->tipoUsuario = "cliente";
+                $this->tipoUsuario = "0";
             
-            }else if($token->data->tipo == 1){
+            }else if($token->data->tipo == '1'){
             
-                $this->tipoUsuario = "empleado";
+                $this->tipoUsuario = "1";
             
-            }else if($token->data->tipo == 2){
+            }else if($token->data->tipo == '2'){
 
-                $this->tipoUsuario = "administrador";
+                $this->tipoUsuario = "2";
 
             }
 

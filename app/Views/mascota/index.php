@@ -234,12 +234,12 @@
 
                     console.log(data.mascota);
 
-                    $("select[name='idUsuario'] option[value='"+mascota.idUsuario+"']").attr("selected","selected" );
-                    $("select[name='idAnimal'] option[value='"+mascota.idAnimal+"']").attr("selected","selected" );
-                    $("input[name='nombre']").val(mascota.nombre);
-                    $("input[name='raza']").val(mascota.raza);
-                    $("input[name='descripcion']").val(mascota.descripcion);
-                    $("input[name='correo']").val(mascota.correo);
+                    $("#idUsuarioEditar").val(mascota.idUsuario).change();
+                    $("#idAnimalEditar").val(mascota.idAnimal).change();
+                    $("#idNombre").val(mascota.nombre);
+                    $("#idRaza").val(mascota.raza);
+                    $("#idDescripcion").val(mascota.descripcion);
+                    $("#idCorreo").val(mascota.correo);
                     
 
 

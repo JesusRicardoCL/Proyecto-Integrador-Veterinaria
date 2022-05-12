@@ -231,7 +231,7 @@
                     console.log(data.venta);
 
                     $("input[name='editar_productos']").val(venta.productos);
-                    $("input[name='editar_descripcion']").val(venta.descripcion);
+                    $("input[name='editar_descripcion']").val(venta.descripcion); 
                     $("input[name='editar_fecha']").val(venta.fecha);
                     $("input[name='editar_total']").val(venta.total);
                 });

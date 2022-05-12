@@ -226,10 +226,10 @@
 
                     console.log(data.usuario);
 
-                    $("input[name='nombre']").val(usuario.nombre);
-                    $("input[name='domicilio']").val(usuario.domicilio);
-                    $("input[name='telefono']").val(usuario.telefono);
-                    $("input[name='correo']").val(usuario.correo);
+                    $("#idNombre").val(usuario.nombre);
+                    $("#idDomicilio").val(usuario.domicilio);
+                    $("#idTelefono").val(usuario.telefono);
+                    $("#idCorreo").val(usuario.correo);
                 });
 
         }

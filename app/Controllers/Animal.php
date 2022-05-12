@@ -6,7 +6,7 @@ use CodeIgniter\RESTful\ResourceController;
 Class Animal extends ResourceController{
 
     protected $modelName = 'App\Models\AnimalModel';
-    protected $format = 'json';
+    protected $format = 'json'; 
 
     public function index(){
         

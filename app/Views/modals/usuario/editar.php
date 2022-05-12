@@ -11,19 +11,19 @@
 
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Nombre:</label>
-                            <input type="text" class="form-control" name="nombre">
+                            <input id="idNombre" type="text" class="form-control" name="nombre">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Domicilio:</label>
-                            <input type="text" class="form-control" name="domicilio">
+                            <input id="idDomicilio" type="text" class="form-control" name="domicilio">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" name="telefono">
+                            <input id="idTelefono" type="text" class="form-control" name="telefono">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Correo:</label>
-                            <input type="text" class="form-control" name="correo">
+                            <input id="idCorreo" type="text" class="form-control" name="correo">
                         </div>
 
                     </form>

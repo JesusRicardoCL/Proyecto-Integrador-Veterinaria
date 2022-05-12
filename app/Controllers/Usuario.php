@@ -11,6 +11,7 @@ Class Usuario extends Auth{
 
     public function index(){
         
+        
         $data=[
             "usuarios" => $this->model->findAll()
          ]; 
@@ -20,8 +21,27 @@ Class Usuario extends Auth{
 
     public function login(){
         
-
         echo view('usuario/login');
+    }
+
+    public function auth(){
+
+        $telefono = trim($this->request->getPost('telefono'));
+        //$contrasena = trim($this->request->getVar('contrasena'));
+
+        echo $telefono;
+
+        if(!$this->model->obtenerPor('telefono',$telefono)){
+            //echo "no funciona";
+        } else {
+            //echo "funciona";
+        }
+        
+		//$datosUsuario = $this->model->login($data['telefono'],$data['contrasena']);
+
+
+		return redirect()->to(base_url('usuario/index'));
+
     }
 
     public function showAll(){

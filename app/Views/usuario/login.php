@@ -3,7 +3,7 @@
 
 <head>
 
-<?php echo view('plantilla/head'); ?>
+    <?php echo view('plantilla/head'); ?>
 
 </head>
 
@@ -26,17 +26,14 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">¡Bienvenido!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" id="login">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Correo electronico o telefono">
+                                            <input type="text" class="form-control form-control-user" id="telefono" aria-describedby="emailHelp" placeholder="Telefono" name="telefono">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Contraseña">
+                                            <input type="password" class="form-control form-control-user" id="contrasena" placeholder="Contraseña" name="contrasena">
                                         </div>
-                                        <a class="btn btn-primary btn-user btn-block" onclick="login()">
+                                        <a class="btn btn-primary btn-user btn-block" onClick="login2()">
                                             Iniciar sesión
                                         </a>
                                     </form>
@@ -62,67 +59,87 @@
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script>
+        function login2() {
+            console.log("aaaa");
+            console.log($("#telefono").val());
+            console.log($("#contrasena").val());
 
-    function login(){
-    
-      var url = 'http://localhost/vet/public';
 
-      $.ajax({
-        url: url+'/auth',
-        data: {"user": $("#user").val(), 
-              "password": $("#password").val(), 
-              "tipo": 0},
-        type: "POST",
-        dataType: "json",
-      })
-      .done(function(data,textStatus,jqXHR){
+            var url = "<?= base_url(); ?>";
 
-        //Se guardan los valores obtenidos en el localStorage
-        if(typeof data.error !== "string"){
-        
-        localStorage.setItem("token",data.token);
-        localStorage.setItem("tipo",data.tipo);
-        localStorage.setItem("user",JSON.stringify(data.user));
+            console.log(url + '/usuario/auth/' + $("#login").serialize());
 
-        location.href = "/vet/public";
+            $.ajax({
+                    url: url + '/usuario/auth',
+                    data: {
+                        "telefono": $("#telefono").val()
+                    },
+                    success: function(datos) { //success es una funcion que se utiliza si el servidor retorna informacion
+                        console.log(datos)
+                    },
+                    type: "POST",
+                    dataType: "json",
+                });
 
-        }else{
-          alert(data.error);
         }
 
-        /*
-          A partir de aqui se realizan muchas pruebas para comprobar que 
-          todo se guarde jijijija
-        */
+        function login() {
 
-        // Impresion de los datos guardados
-        console.log("El token: "+localStorage.getItem("token"));
-        console.log("El tipo: "+localStorage.getItem("tipo"));
-        console.log("El user: "+localStorage.getItem("user"));
+            var url = 'http://localhost/vet/public';
 
-        // Conversion del objeto guardado como json a objeto user
-        var user = JSON.parse(localStorage.getItem("user"));
+            $.ajax({
+                    url: url + '/auth',
+                    data: {
+                        "user": $("#user").val(),
+                        "password": $("#password").val(),
+                        "tipo": 0
+                    },
+                    type: "POST",
+                    dataType: "json",
+                })
+                .done(function(data, textStatus, jqXHR) {
 
-        // Impresion de los datos del objeto user
-        console.log("hola "+user.nombre+" "+user.apellidos);
+                    //Se guardan los valores obtenidos en el localStorage
+                    if (typeof data.error !== "string") {
 
-        // Redireccion de la aplicacion a otra pantalla
-        // location.href = "/gymapp";
-      })
-      .fail(function(jqXHR,textStatus,errorThrown){
-        console.log("La solicitud ha fallado: " + textStatus)
-      })
+                        localStorage.setItem("token", data.token);
+                        localStorage.setItem("tipo", data.tipo);
+                        localStorage.setItem("user", JSON.stringify(data.user));
 
-    }
+                        location.href = "/vet/public";
 
+                    } else {
+                        alert(data.error);
+                    }
 
+                    /*
+                      A partir de aqui se realizan muchas pruebas para comprobar que 
+                      todo se guarde jijijija
+                    */
+
+                    // Impresion de los datos guardados
+                    console.log("El token: " + localStorage.getItem("token"));
+                    console.log("El tipo: " + localStorage.getItem("tipo"));
+                    console.log("El user: " + localStorage.getItem("user"));
+
+                    // Conversion del objeto guardado como json a objeto user
+                    var user = JSON.parse(localStorage.getItem("user"));
+
+                    // Impresion de los datos del objeto user
+                    console.log("hola " + user.nombre + " " + user.apellidos);
+
+                    // Redireccion de la aplicacion a otra pantalla
+                    // location.href = "/gymapp";
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.log("La solicitud ha fallado: " + textStatus)
+                })
+
+        }
     </script>
 
-    
+
     <!-- End of Scripts -->
 
 </body>

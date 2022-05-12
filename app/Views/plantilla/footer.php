@@ -3,7 +3,7 @@
         <div class="copyright text-center my-auto">
             <span>Copyright &copy; Vetpet 2022</span>
             <br /><br />
-            <span>Aaron Gastelum - Jesús Ricardo - Jesus Sabas</span>
+            <span>Aaron Gastelum - Jesús Ricardo - Max Ramírez - Jesús Sabas</span>
         </div>
     </div>
 </footer>

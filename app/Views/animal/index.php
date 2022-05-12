@@ -215,7 +215,7 @@
 
                     console.log(data.animal);
 
-                    $("input[name='nombre']").val(animal.nombre);
+                    $("#idNombre").val(animal.nombre);
                 });
 
         }
@@ -235,6 +235,9 @@
 
 
         function editar() {
+
+            console.log($("#form_editar").serialize());
+
             $.ajax({
                     url: url + '/animal/update/' + $("#id_editar").val(),
                     data: $("#form_editar").serialize(),

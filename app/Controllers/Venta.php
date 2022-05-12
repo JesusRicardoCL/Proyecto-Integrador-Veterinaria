@@ -40,7 +40,7 @@ class Venta extends ResourceController
             "nombre" => $this->request->getPost('nombre')
         ];
 
-        $this->cart->insert($data);
+        $this->cart->insert($data); 
 
     }
 

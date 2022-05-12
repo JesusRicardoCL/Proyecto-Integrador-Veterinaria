@@ -10,7 +10,7 @@
                         <input id="id_editar" type="hidden">
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Nombre:</label>
-                            <input type="text" class="form-control" name="nombre">
+                            <input id="idNombre" type="text" class="form-control" name="nombre">
                         </div>
                     </form>
                 </div>
