@@ -116,25 +116,6 @@
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
 
-    <!-- Script para comprobar que haya un usuario con sesion iniciada -->
-    <!-- NO FUNCIONA -->
-    <script>
-        //if(!localStorage.getItem("user")){
-        //  location.href="<?= base_url('usuario/login') ?>";
-        //}
-
-        var user = JSON.parse(localStorage.getItem("user"));
-        //   $(".nombre-usuario").html(user.nombre);
-
-        function signout() {
-            localStorage.removeItem("token");
-            localStorage.removeItem("tipo");
-            localStorage.removeItem("user");
-            localStorage.clear();
-            location.href = "pages/sign-in.html"
-        }
-    </script>
-
     <!-- Scripts de CRUD -->
     <script>
         var url = "<?= base_url(); ?>";
