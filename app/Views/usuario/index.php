@@ -43,6 +43,7 @@
                                             <th>Domicilio <i class="fas fa-map-marked"></i> </th>
                                             <th>Telefono <i class="fas fa-phone-square-alt"></i> </th>
                                             <th>Correo <i class="fas fa-envelope-square"></i></i> </th>
+                                            <th class="table_password">Contraseña <i class="fas fa-envelope-square"></i></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
@@ -53,6 +54,7 @@
                                             <th>Domicilio</th>
                                             <th>Telefono</th>
                                             <th>Correo</th>
+                                            <th class="table_password">Contraseña</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </tfoot>
@@ -66,6 +68,7 @@
                                                 <td> <?= $usuario['domicilio'] ?> </td>
                                                 <td> <?= $usuario['telefono']  ?> </td>
                                                 <td> <?= $usuario['correo']  ?> </td>
+                                                <td class="table_password"> <?= $usuario['contrasena']  ?> </td>
                                                 <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $usuario['id'] ?>">Eliminar</button>
                                                 </td>
@@ -115,6 +118,23 @@
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
+
+
+    <!-- Script de prueba 
+    sirve ocultarle cosas a los que no son admins aunque aun asi se pueden ver al inspeccionar la pagina-->
+    <script>
+/*
+        if(localStorage.getItem("tipo")!="administrador"){
+            console.log("entro");
+            elementos = document.getElementsByClassName('table_password');
+
+            for (elemento of elementos){
+                elemento.style.display = 'none';
+            }
+        }
+*/
+    </script>
+
 
     <!-- Scripts de CRUD -->
     <script>
