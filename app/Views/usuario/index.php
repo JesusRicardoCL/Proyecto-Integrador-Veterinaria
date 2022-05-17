@@ -231,6 +231,7 @@
                     $("#idDomicilio").val(usuario.domicilio);
                     $("#idTelefono").val(usuario.telefono);
                     $("#idCorreo").val(usuario.correo);
+                    $("#idContrasena").val(usuario.contrasena);
                 });
 
         }

@@ -1,0 +1,150 @@
+CRITICAL - 2022-05-16 17:15:55 --> Call to a member function insert() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 17:39:20 --> Call to a member function insert() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:36 --> Call to a member function view() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:39 --> Call to a member function view() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:39 --> Call to a member function view() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:39 --> Call to a member function view() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:39 --> Call to a member function view() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:39 --> Call to a member function view() on null
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 18:14:54 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\usuario\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Venta.php(62): view('usuario/index')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 18:14:58 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\usuario\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Venta.php(62): view('usuario/index')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 18:15:05 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\usuario\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Venta.php(62): view('usuario/index')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 18:15:10 --> Invalid argument supplied for foreach()
+#0 C:\Users\jesus\Documents\GitHub\vet\app\Views\usuario\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\jesus\\...', 63, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(210): include('C:\\Users\\jesus\\...')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Venta.php(62): view('usuario/index')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-16 18:35:38 --> Column 'productos' cannot be null
+ERROR - 2022-05-16 18:37:26 --> Column 'productos' cannot be null
+ERROR - 2022-05-16 18:43:17 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-16 18:45:41 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-16 18:46:31 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-16 18:46:41 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-16 18:48:24 --> Column 'descripcion' cannot be null
+ERROR - 2022-05-16 18:48:32 --> Column 'descripcion' cannot be null
+CRITICAL - 2022-05-16 19:26:24 --> There is no data to update.
+#0 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Producto.php(79): CodeIgniter\Model->update('1', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Producto->update('1')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-16 19:26:43 --> There is no data to update.
+#0 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Producto.php(79): CodeIgniter\Model->update('1', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Producto->update('1')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-16 19:27:30 --> There is no data to update.
+#0 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Producto.php(79): CodeIgniter\Model->update('1', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Producto->update('1')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-16 19:28:11 --> There is no data to update.
+#0 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Producto.php(79): CodeIgniter\Model->update('1', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Producto->update('1')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-16 19:31:37 --> There is no data to update.
+#0 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\jesus\Documents\GitHub\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\Users\jesus\Documents\GitHub\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Producto.php(79): CodeIgniter\Model->update('1', Array)
+#4 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Producto->update('1')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

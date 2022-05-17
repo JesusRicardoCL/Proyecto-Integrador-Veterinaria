@@ -9,11 +9,11 @@
                 <form id="create">
                     <div class="mb-3">
                         <label>Cliente:</label>
-                        <select name="idUsuario" class="form-control">
+                        <select name="idUsuario" id="idUsuario" class="form-control">
 
                             <?php foreach ($usuarios as $usuario) { ?>
 
-                                <option id="idUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
+                                <option id="idOpcionUsuario" value="<?= $usuario['id'] ?>" }><?= $usuario['nombre'] ?></option>
 
                             <?php  } ?>
 
@@ -26,20 +26,18 @@
                         <label for="recipient-name" class="col-form-label">Descripcion:</label>
                         <input type="text" class="form-control" name="descripcion">
                     </div>
-
-
-
                     <input type="hidden" name="fecha" value="<?php echo date("Y-m-d H:i:s "); ?>">
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Total:</label>
-                        <input type="text" class="form-control" name="total">
-                    </div>
                 </form>
                 <form id="addCart">
                     <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Producto:</label>
+
                         <div class="container" style="padding:0px; min-width:100%; align-items:center; display:flex;">
-                            <select name="idProducto" id="idProducto" class="form-control" style="width: 50%;" onchange="actualizarCantidad()">
+                            <label for="recipient-name" class="col-form-label" style="width:60%">Producto:</label>
+                            <label for="recipient-name" class="col-form-label" style="width:20%">Cantidad:</label>
+                            <label for="recipient-name" class="col-form-label" style="width:20%">Precio:</label>
+                        </div>
+                        <div class="container" style="padding:0px; min-width:100%; align-items:center; display:flex;">
+                            <select name="idProducto" id="idProducto" class="form-control" style="width: 60%;" onchange="actualizarCantidad()">
                                 <option value="0">Seleccione un producto...</option>
 
                                 <?php foreach ($productos as $producto) { ?>
@@ -51,9 +49,15 @@
                                 <?php  } ?>
 
                             </select>
-                            <input type="number" class="form-control" id="cantidad" name="cantidad" min="0" max="0" value="0" style="width: 15%; margin:10px;" onkeyup="validationFunction()">
-                            <input type="number" class="form-control" id="precio" name="precio" min="0" max="9999" value="0" style="width: 15%; margin-right:10px;">
-                            <button type="button" class="btn btn-primary" style="width: 20%;" onclick="agregarCarrito()">Agregar</button>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" min="0" max="0" value="0" style="width: 20%; margin:10px;" onkeyup="validationFunction()" onchange="calcularTotal()">
+                            <input type="number" class="form-control" id="precio" name="precio" min="0" max="9999" value="0" style="width: 20%;">
+                            <!--<button type="button" class="btn btn-primary" style="width: 20%;" onclick="agregarCarrito()">Agregar</button> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label" >Total (IVA incluido):</label>
+                        </div>
+                        <div class="mb-3">
+                            <label id="total">0.0</label>
                         </div>
                     </div>
                 </form>
@@ -100,10 +104,13 @@
 
     function agregarCarrito() {
 
+        console.log($("#addCart").serialize() + "&nombre=" + $("#idProducto option:selected").text());
+        console.log($("#idUsuario option:selected").val());
+
         $.ajax({
 
                 url: url + '/venta/add_cart',
-                data: $("#addCart").serialize()+"&nombre="+$("#idProducto option:selected").text(), 
+                data: $("#addCart").serialize() + "&nombre=" + $("#idProducto option:selected").text(),
                 type: "POST",
                 dataType: "json",
                 headers: {
@@ -112,7 +119,7 @@
             })
             .done(function(data, textStatus, jqXHR) {
 
-                //console.log(data);
+                console.log(data);
 
                 if (data.id != null) {
 
@@ -131,7 +138,7 @@
     }
 
     function validationFunction() {
-        console.log("---------")
+        calcularTotal();
 
 
         var current = parseFloat(document.getElementById('cantidad').value);
@@ -140,9 +147,20 @@
         console.log(current);
         console.log(max);
 
-        if (current > max) {
+        if (current > max || current < 0 || document.getElementById('cantidad').text == '-' ) {
             console.log("ENTRADO X2")
             document.getElementById('cantidad').value = cantidadMaxima;
         }
     }
+
+    function calcularTotal(){
+        var cantidad = parseFloat(document.getElementById('cantidad').value);
+        var precio = parseFloat(document.getElementById('precio').value);
+
+        var subtotal = cantidad * precio;
+        var total = subtotal * 1.16;
+
+        document.getElementById('total').innerHTML = "$"+total;
+    }
+
 </script>

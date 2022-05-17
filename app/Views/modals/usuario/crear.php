@@ -23,6 +23,10 @@
                             <label for="recipient-name" class="col-form-label">Correo:</label>
                             <input type="text" class="form-control" name="correo">
                         </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                            <input type="text" class="form-control" name="contrasena">
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">

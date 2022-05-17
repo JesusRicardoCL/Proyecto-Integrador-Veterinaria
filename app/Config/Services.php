@@ -2,7 +2,11 @@
 
 namespace Config;
 
-use CodeIgniter\Config\BaseService;
+//use CodeIgniter\Config\BaseService;
+
+use CodeIgniter\Config\Services as CoreServices;
+
+require_once SYSTEMPATH . 'Config/Services.php';
 
 /**
  * Services Configuration file.
@@ -17,7 +21,7 @@ use CodeIgniter\Config\BaseService;
  * method format you should use for your service methods. For more examples,
  * see the core Services file at system/Config/Services.php.
  */
-class Services extends BaseService
+class Services extends CoreServices
 {
     /*
      * public static function example($getShared = true)
@@ -32,5 +36,12 @@ class Services extends BaseService
 
     public static function getSecretKey(){
         return "conejoSecret";
+    }
+
+    public static function cart($getShared = true){
+        if($getShared){
+            return static::getSharedInstance('cart');
+        }
+        return new \App\Libraries\Cart();
     }
 }

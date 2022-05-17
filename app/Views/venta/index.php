@@ -39,7 +39,7 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Productos <i class="fas fa-user"></i> </th>
+                                            <th>Producto <i class="fas fa-user"></i> </th>
                                             <th>Descripcion <i class="fas fa-map-marked"></i> </th>
                                             <th>Fecha <i class="fas fa-phone-square-alt"></i> </th>
                                             <th>Total <i class="fas fa-envelope-square"></i></i> </th>
@@ -49,7 +49,7 @@
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Productos</th>
+                                            <th>Producto</th>
                                             <th>Descripcion</th>
                                             <th>Fecha</th>
                                             <th>Total</th>
@@ -58,7 +58,7 @@
                                     </tfoot>
                                     <tbody>
 
-                                      <?php foreach ($ventas as $venta) { ?>
+                                        <?php foreach ($ventas as $venta) { ?>
 
                                             <tr>
                                                 <td> <?= $venta['id'] ?> </td>
@@ -72,7 +72,7 @@
                                             </tr>
 
                                         <?php  } ?>
-                                        
+
 
                                     </tbody>
                                 </table>
@@ -165,12 +165,13 @@
 
         function crear() {
 
-            console.log($("#create").serialize());
+            //console.log($("#create").serialize());
+            console.log($("#create").serialize() + "&" + $("#addCart").serialize() + "&nombre=" + $("#idProducto option:selected").text() + "&idUsuario=" + $("#idUsuario option:selected").val());
 
             $.ajax({
-              
+
                     url: url + '/venta/create',
-                    data: $("#create").serialize(),
+                    data: $("#create").serialize() + "&" + $("#addCart").serialize() + "&nombre=" + $("#idProducto option:selected").text() + "&idUsuario=" + $("#idUsuario option:selected").val(),
                     type: "POST",
                     dataType: "json",
                     headers: {
@@ -185,6 +186,38 @@
                             title: 'Éxito!',
                             text: 'La venta se ha creado correctamente!',
                         }).then(function() {
+
+
+                            var cantidad = parseFloat(document.getElementById('cantidad').value)
+                            var max = parseFloat(document.getElementById('cantidad').max);
+
+                            var actualizacion = max - cantidad;
+
+                            console.log(actualizacion);
+
+                            $.ajax({
+                                    url: url + '/producto/updateQty/' + $("#idProducto option:selected").val(),
+                                    data: "cantidad="+actualizacion,
+                                    type: "POST",
+                                    dataType: "json",
+                                    headers: {
+                                        token: localStorage.getItem("token")
+                                    }
+                                })
+                                .done(function(data, textStatus, jqXHR) {
+
+                                    if (data.data.id !== null) {
+                                        Swal.fire({
+                                            title: 'Éxito!',
+                                            text: 'El producto se ha editado correctamente!',
+                                        }).then(function() {
+                                            location.reload();
+                                        });
+                                    } else {
+                                        alert("Hay algo mal en el formulario ");
+                                    }
+
+                                });
                             location.reload();
                         });
 
@@ -212,14 +245,14 @@
                     console.log(data.venta);
 
                     $("input[name='editar_productos']").val(venta.productos);
-                    $("input[name='editar_descripcion']").val(venta.descripcion); 
+                    $("input[name='editar_descripcion']").val(venta.descripcion);
                     $("input[name='editar_fecha']").val(venta.fecha);
                     $("input[name='editar_total']").val(venta.total);
                 });
 
         }
 
-        
+
 
         $('#editarModal').on('show.bs.modal', function(event) {
 

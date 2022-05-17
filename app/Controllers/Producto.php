@@ -88,6 +88,22 @@ Class Producto extends ResourceController {
         }
     }
 
+    public function updateQty($id=null){
+
+        $data = [];
+
+        $data["cantidad"] = $this->request->getPost('cantidad');
+
+        $result = $this->model->update($id,$data);
+ 
+        if($result){
+            $producto = $this->respond($this->model->find($id));
+            return $this->respond($producto);
+        }else{
+             return $this->respond(["error" => "El producto no se edito correctamente!"]);
+        }
+    }
+
     public function delete($id=null){
         $result = $this->model->delete($id);
 

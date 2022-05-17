@@ -31,16 +31,31 @@ class Venta extends ResourceController
 
     public function add_cart(){
 
-        
+        //print_r('lol');
 
+        $cart = \Config\Services::cart();
+
+        
+/*
         $data = [
-            "idProducto" => $this->request->getPost('idProducto'),
-            "cantidad" => $this->request->getPost('cantidad'),
-            "precio" => $this->request->getPost('precio'),
-            "nombre" => $this->request->getPost('nombre')
+            "id" => $this->request->getPost('idProducto'),
+            "name" => $this->request->getPost('nombre'),
+            "qty" => $this->request->getPost('cantidad'),
+            "price" => $this->request->getPost('precio')
+        ];
+        */
+        $data = [
+            "id" => $this->request->getPost('idProducto'),
+            "name" => $this->request->getPost('nombre'),
+            "qty" => $this->request->getPost('cantidad'),
+            "price" => $this->request->getPost('precio')
         ];
 
-        $this->cart->insert($data); 
+        $cart->insert($data);
+
+        //print_r(cart()->contents());exit;
+
+        return $this->respond($data);
 
     }
 
@@ -56,11 +71,14 @@ class Venta extends ResourceController
     public function create()
     {
 
+        $subtotal = floatval($this->request->getPost('precio')) * floatval($this->request->getPost('cantidad'));
+        $total = $subtotal * 1.16;
+
         $data = [
-            "productos" => "placeholder jaja",
+            "productos" => $this->request->getPost('nombre'),
             "descripcion" => $this->request->getPost('descripcion'),
             "fecha" => $this->request->getPost('fecha'),
-            "total" => $this->request->getPost('total')
+            "total" => $total
         ];
 
         $id = $this->model->insert($data);

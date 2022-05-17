@@ -25,6 +25,10 @@
                             <label for="recipient-name" class="col-form-label">Correo:</label>
                             <input id="idCorreo" type="text" class="form-control" name="correo">
                         </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                            <input id="idContrasena" type="text" class="form-control" name="contrasena">
+                        </div>
 
                     </form>
                 </div>
