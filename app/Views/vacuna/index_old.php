@@ -28,10 +28,10 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Ventas</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Vacunacion </h1>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar una nueva venta</button>
+                            <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar Vacunacion</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -39,40 +39,36 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Producto <i class="fas fa-user"></i> </th>
-                                            <th>Descripcion <i class="fas fa-map-marked"></i> </th>
-                                            <th>Fecha <i class="fas fa-phone-square-alt"></i> </th>
-                                            <th>Total <i class="fas fa-envelope-square"></i></i> </th>
+                                            <th>Mascota <i class="fas fa-user"></i> </th>
+                                            <th>Fecha <i class="fas fa-map-marked"></i> </th>
+                                            <th>Nombre <i class="fas fa-phone-square-alt"></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Producto</th>
-                                            <th>Descripcion</th>
+                                            <th>Mascota</th>
                                             <th>Fecha</th>
-                                            <th>Total</th>
+                                            <th>Nombre</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
 
-                                        <?php foreach ($ventas as $venta) { ?>
+                                        <?php foreach ($vacunas as $vacuna) { ?>
 
                                             <tr>
-                                                <td> <?= $venta['id'] ?> </td>
-                                                <td> <?= $venta['productos'] ?> </td>
-                                                <td> <?= $venta['descripcion'] ?> </td>
-                                                <td> <?= $venta['fecha']  ?> </td>
-                                                <td> <?= $venta['total']  ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $venta['id'] ?>">Editar</a>
-                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $venta['id'] ?>">Eliminar</button>
+                                                <td> <?= $vacuna['id'] ?> </td>
+                                                <td> <?= $vacuna['mascota'] ?> </td>
+                                                <td> <?= $vacuna['fecha'] ?> </td>
+                                                <td> <?= $vacuna['nombre']  ?> </td>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $vacuna['id'] ?>">Editar</a>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $vacuna['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>
 
                                         <?php  } ?>
-
 
                                     </tbody>
                                 </table>
@@ -106,13 +102,13 @@
     <?php echo view('modals/usuario/logout'); ?>
 
     <!-- Modal Create Product-->
-    <?php echo view('modals/venta/crear'); ?>
+    <?php echo view('modals/vacuna/crear'); ?>
 
     <!-- Modal Edit Product-->
-    <?php echo view('modals/venta/editar'); ?>
+    <?php echo view('modals/vacuna/editar'); ?>
 
     <!-- Modal Delete Product-->
-    <?php echo view('modals/venta/eliminar'); ?>
+    <?php echo view('modals/vacuna/eliminar'); ?>
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
@@ -127,7 +123,7 @@
         function eliminar() {
 
             $.ajax({
-                    url: url + '/venta/delete/' + $("#id_eliminar").val(),
+                    url: url + '/producto/delete/' + $("#id_eliminar").val(),
                     data: {},
                     type: "POST",
                     dataType: "json",
@@ -141,7 +137,7 @@
 
                     Swal.fire({
                         title: 'Éxito!',
-                        text: 'La venta se ha eliminado correctamente!',
+                        text: 'El producto se ha eliminado correctamente!',
                         type: 'sucess'
                     }).then(function() {
                         location.reload();
@@ -165,13 +161,9 @@
 
         function crear() {
 
-            //console.log($("#create").serialize());
-            console.log($("#create").serialize() + "&" + $("#addCart").serialize() + "&nombre=" + $("#idProducto option:selected").text() + "&idUsuario=" + $("#idUsuario option:selected").val());
-
             $.ajax({
-
-                    url: url + '/venta/create',
-                    data: $("#create").serialize() + "&" + $("#addCart").serialize() + "&nombre=" + $("#idProducto option:selected").text() + "&idUsuario=" + $("#idUsuario option:selected").val(),
+                    url: url + '/producto/create',
+                    data: $("#create").serialize(),
                     type: "POST",
                     dataType: "json",
                     headers: {
@@ -184,40 +176,8 @@
 
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'La venta se ha creado correctamente!',
+                            text: 'El producto se ha creado correctamente!',
                         }).then(function() {
-
-
-                            var cantidad = parseFloat(document.getElementById('cantidad').value)
-                            var max = parseFloat(document.getElementById('cantidad').max);
-
-                            var actualizacion = max - cantidad;
-
-                            console.log(actualizacion);
-
-                            $.ajax({
-                                    url: url + '/producto/updateQty/' + $("#idProducto option:selected").val(),
-                                    data: "cantidad="+actualizacion,
-                                    type: "POST",
-                                    dataType: "json",
-                                    headers: {
-                                        token: localStorage.getItem("token")
-                                    }
-                                })
-                                .done(function(data, textStatus, jqXHR) {
-
-                                    if (data.data.id !== null) {
-                                        Swal.fire({
-                                            title: 'Éxito!',
-                                            text: 'El producto se ha editado correctamente!',
-                                        }).then(function() {
-                                            location.reload();
-                                        });
-                                    } else {
-                                        alert("Hay algo mal en el formulario ");
-                                    }
-
-                                });
                             location.reload();
                         });
 
@@ -231,7 +191,7 @@
 
         function llenarForm() {
             $.ajax({
-                    url: url + '/venta/show/' + $("#id_editar").val(),
+                    url: url + '/producto/show/' + $("#id_editar").val(),
                     data: {},
                     type: "GET",
                     dataType: "json",
@@ -240,19 +200,19 @@
                     }
                 })
                 .done(function(data, textStatus, jqXHR) {
-                    var venta = data.venta;
+                    var producto = data.producto;
 
-                    console.log(data.venta);
+                    console.log(data.producto);
 
-                    $("input[name='productos']").val(venta.productos);
-                    $("input[name='descripcion']").val(venta.descripcion);
-                    $("input[name='fecha']").val(venta.fecha);
-                    $("input[name='total']").val(venta.total);
+                    $("input[name='nombre']").val(producto.nombre);
+                    $("input[name='descripcion']").val(producto.descripcion);
+                    $("input[name='cantidad']").val(producto.cantidad);
+                    $("input[name='precio']").val(producto.precio);
                 });
 
         }
 
-
+        
 
         $('#editarModal').on('show.bs.modal', function(event) {
 
@@ -269,7 +229,7 @@
         function editar() {
             console.log($("#form_editar").serialize());
             $.ajax({
-                    url: url + '/venta/update/' + $("#id_editar").val(),
+                    url: url + '/producto/update/' + $("#id_editar").val(),
                     data: $("#form_editar").serialize(),
                     type: "POST",
                     dataType: "json",

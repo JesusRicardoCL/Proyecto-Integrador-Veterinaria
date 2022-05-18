@@ -1,0 +1,111 @@
+CRITICAL - 2022-05-12 01:37:42 --> Undefined property: App\Controllers\Venta::$cart
+#0 C:\laragon\www\vet\app\Controllers\Venta.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 43, Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-12 01:37:46 --> Undefined property: App\Controllers\Venta::$cart
+#0 C:\laragon\www\vet\app\Controllers\Venta.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 43, Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-12 01:38:03 --> Undefined property: App\Controllers\Venta::$cart
+#0 C:\laragon\www\vet\app\Controllers\Venta.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 43, Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->add_cart()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-12 01:38:32 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 01:38:38 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:19 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:21 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:22 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:22 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:22 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:22 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-12 12:11:22 --> There is no data to update.
+#0 C:\laragon\www\vet\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\vet\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(Array, 'update')
+#2 C:\laragon\www\vet\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\laragon\www\vet\app\Controllers\Venta.php(92): CodeIgniter\Model->update('3', Array)
+#4 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Venta->update('3')
+#5 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venta))
+#6 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

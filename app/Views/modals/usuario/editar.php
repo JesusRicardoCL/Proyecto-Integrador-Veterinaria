@@ -29,6 +29,18 @@
                             <label for="recipient-name" class="col-form-label">Contraseña:</label>
                             <input id="idContrasena" type="text" class="form-control" name="contrasena">
                         </div>
+                        <div class="mb-3">
+                        <label>Seleccione el tipo de usuario</label>
+                        <select name="tipo_usuario" class="form-control">
+                            <option id="idtipo_usuario" value="">Sin Opcion</option>
+
+                        <option id="idtipo_usuario" value="1">Cliente</option>
+                        <option id="idtipo_usuario" value="2">Empleado</option>
+                        <option id="idtipo_usuario" value="3">Administrador</option>
+
+
+                        </select>
+                    </div>
 
                     </form>
                 </div>

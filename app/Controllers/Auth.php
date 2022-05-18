@@ -59,12 +59,12 @@ class Auth extends ResourceController
 
         $jwt = JWT::encode($payload, $key, "HS256");
 
-        if ($this->usuario["tipo_usuario"] == 0){
+        if ($this->usuario["tipo_usuario"] == 1){
           $tipo = "cliente";
           return $this->respond(["error" => "Su cuenta no esta autorizada para acceder"]);
-        }else if($this->usuario["tipo_usuario"] == 1){
-          $tipo = "empleado";
         }else if($this->usuario["tipo_usuario"] == 2){
+          $tipo = "empleado";
+        }else if($this->usuario["tipo_usuario"] == 3){
           $tipo = "administrador";
         }
 

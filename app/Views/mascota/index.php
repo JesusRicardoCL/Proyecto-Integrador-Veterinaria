@@ -32,6 +32,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                         <button data-bs-toggle="modal" data-bs-target="#createModal" class="btn btn-success">Agregar una nueva mascota</button>
+                       
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -42,8 +43,8 @@
                                             <th>Nombre <i class="fas fa-user"></i> </th>
                                             <th>Raza <i class="fas fa-map-marked"></i> </th>
                                             <th>Descripción <i class="fas fa-phone-square-alt"></i> </th>
-                                            <th>Animal <i class="fas fa-envelope-square"></i></i> </th>
-                                            <th>Cliente <i class="fas fa-fw fa-edit"></i></th>
+                                            <th>Animal <i class="fas fa-dog"></i></i> </th>
+                                            <th>Cliente <i class="far fa-address-card"></i></th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
@@ -120,6 +121,9 @@
 
     <!-- Modal Delete Product-->
     <?php echo view('modals/mascota/eliminar'); ?>
+
+      <!-- Modal create Vacuna-->
+    <?php echo view('modals/vacuna/crear'); ?>
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>

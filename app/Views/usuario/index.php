@@ -232,6 +232,8 @@
                     $("#idTelefono").val(usuario.telefono);
                     $("#idCorreo").val(usuario.correo);
                     $("#idContrasena").val(usuario.contrasena);
+                     $("select[name='tipo_usuario'] option[value='"+usuario.tipo_usuario+"']").attr("selected","selected" );
+                  //  $("#idtipo_usuario").val(usuario.tipo_usuario);
                 });
 
         }

@@ -41,6 +41,7 @@
                 <a class="collapse-item" href="<?= base_url('producto/index'); ?>">Productos</a>
                 <a class="collapse-item" href="<?= base_url('venta/index'); ?>">Ventas</a>
                 <a class="collapse-item" href="<?= base_url('cita/index'); ?>">Citas</a>
+                <a class="collapse-item" href="<?= base_url('vacuna/index'); ?>">Vacunacion</a>
                
             </div>
         </div>

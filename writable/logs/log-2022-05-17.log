@@ -1,0 +1,670 @@
+CRITICAL - 2022-05-17 00:46:57 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:47:52 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:47:57 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:48:22 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:49:35 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:49:37 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:49:39 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:50:16 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:50:18 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:50:19 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:51:29 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:54:39 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:54:42 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:54:43 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:55:05 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:55:25 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 00:55:26 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 01:00:38 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 01:00:41 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 01:01:17 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 01:01:18 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 01:04:21 --> Class 'App\Controllers\CitaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:04:22 --> Class 'App\Controllers\CitaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:05:02 --> Call to a member function getVacunas() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:12:52 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:13:56 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:14:00 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:14:34 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:14:38 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:17:37 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:18:14 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:18:15 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:18:17 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:18:17 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:22:14 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:22:16 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:22:53 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:22:55 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:25:13 --> Call to a member function findAll() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 01:27:46 --> Call to a member function find() on null
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->show('index')
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:45:54 --> Call to undefined method App\Models\VacunaModel::getVacunas
+#0 C:\laragon\www\vet\app\Controllers\Vacuna.php(33): CodeIgniter\Model->__call('getVacunas', Array)
+#1 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#2 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#3 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 18:47:04 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:47:58 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:47:59 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:47:59 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:30 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:31 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:51 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:52 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:52 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:53 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:53 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:53 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:48:54 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:49:15 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:49:41 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:50:17 --> Class 'App\Controllers\MascotaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:55:27 --> Class 'App\Controllers\VentaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 18:55:28 --> Class 'App\Controllers\VentaModel' not found
+#0 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#1 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#2 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 19:22:31 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(106): view('modals/vacuna/c...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(34): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:26:06 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(111): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:26:36 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(111): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:26:39 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(111): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:28:26 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(105): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:28:27 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(105): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:31:38 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\cita\crear.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/cita/cre...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(105): view('modals/cita/cre...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:32:38 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:32:49 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:43 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:47 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:48 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:49 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:50 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:50 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:33:51 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:34:00 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:35:06 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:35:19 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:38:35 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\vet\app\Views\modals\vacuna\editar.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 16, Array)
+#1 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/e...', Array, true)
+#4 C:\laragon\www\vet\app\Views\vacuna\index.php(108): view('modals/vacuna/e...')
+#5 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#8 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#9 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#10 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#11 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-05-17 20:46:28 --> Invalid file: modals/vacuna/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/vacuna/c...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#2 C:\laragon\www\vet\app\Views\vacuna\index.php(105): view('modals/vacuna/c...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-17 20:46:48 --> Invalid file: modals/vacuna/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/vacuna/c...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#2 C:\laragon\www\vet\app\Views\vacuna\index.php(93): view('modals/vacuna/c...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-17 20:46:49 --> Invalid file: modals/vacuna/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/vacuna/c...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#2 C:\laragon\www\vet\app\Views\vacuna\index.php(93): view('modals/vacuna/c...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-17 20:46:50 --> Invalid file: modals/vacuna/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/vacuna/c...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#2 C:\laragon\www\vet\app\Views\vacuna\index.php(93): view('modals/vacuna/c...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-17 20:46:57 --> Invalid file: modals/vacuna/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/vacuna/c...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#2 C:\laragon\www\vet\app\Views\vacuna\index.php(93): view('modals/vacuna/c...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-17 20:47:03 --> Invalid file: modals/vacuna/crear.php
+#0 C:\laragon\www\vet\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modals/vacuna/c...')
+#1 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('modals/vacuna/c...', Array, true)
+#2 C:\laragon\www\vet\app\Views\vacuna\index.php(93): view('modals/vacuna/c...')
+#3 C:\laragon\www\vet\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\vet\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\vet\system\Common.php(1089): CodeIgniter\View\View->render('vacuna/index', Array, true)
+#6 C:\laragon\www\vet\app\Controllers\Vacuna.php(52): view('vacuna/index', Array)
+#7 C:\laragon\www\vet\system\CodeIgniter.php(832): App\Controllers\Vacuna->index()
+#8 C:\laragon\www\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vacuna))
+#9 C:\laragon\www\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -2,14 +2,15 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Agregar un nuevo producto</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel">Agregar un nueva venta</h5>
+                <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer; font-size: 1.5em"></i>
             </div>
             <div class="modal-body">
                 <form id="create">
                     <div class="mb-3">
                         <label>Cliente:</label>
                         <select name="idUsuario" id="idUsuario" class="form-control">
+                        <option id="idUsuario" value="0">Sin Cliente</option>
 
                             <?php foreach ($usuarios as $usuario) { ?>
 

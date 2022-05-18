@@ -35,6 +35,12 @@
                 <span> Registrar una cita</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('vacuna/index'); ?>">
+                <i class="fas fa-solid fa-calendar-day"></i>&nbsp;&nbsp;
+                <span> Registrar una vacunacion</span>
+            </a>
+        </li>
     </ul>
     <ul class="navbar-nav ml-auto">
         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
