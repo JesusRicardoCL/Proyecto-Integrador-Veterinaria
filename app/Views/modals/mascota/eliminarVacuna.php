@@ -1,4 +1,4 @@
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteVacunaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -6,12 +6,12 @@
                     <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer; font-size: 1.5em"></i>
                 </div>
                 <div class="modal-body">
-                    ¿Seguro que deseas eliminar la venta seleccionada?
+                    ¿Seguro que deseas eliminar la vacuna seleccionada?
                 </div>
-                <input id="id_eliminar" type="hidden">
+                <input id="id_eliminarVacuna" type="hidden">
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-danger" onClick="eliminar()">Eliminar</button>
+                    <button type="submit" class="btn btn-danger" onClick="eliminarVacuna()">Eliminar</button>
                 </div>
             </div>
         </div>

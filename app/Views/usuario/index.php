@@ -43,7 +43,7 @@
                                             <th>Domicilio <i class="fas fa-map-marked"></i> </th>
                                             <th>Telefono <i class="fas fa-phone-square-alt"></i> </th>
                                             <th>Correo <i class="fas fa-envelope-square"></i></i> </th>
-                                            <th class="table_password">Contraseña <i class="fas fa-envelope-square"></i></i> </th>
+                                            <th class="table_password">Contraseña <i class="fas fa-key"></i></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
@@ -69,7 +69,7 @@
                                                 <td> <?= $usuario['telefono']  ?> </td>
                                                 <td> <?= $usuario['correo']  ?> </td>
                                                 <td class="table_password"> <?= $usuario['contrasena']  ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $usuario['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $usuario['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>

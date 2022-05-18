@@ -40,9 +40,9 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Producto <i class="fas fa-user"></i> </th>
-                                            <th>Descripcion <i class="fas fa-map-marked"></i> </th>
-                                            <th>Fecha <i class="fas fa-phone-square-alt"></i> </th>
-                                            <th>Total <i class="fas fa-envelope-square"></i></i> </th>
+                                            <th>Descripcion <i class="fas fa-text-height"></i> </th>
+                                            <th>Fecha <i class="fas fa-calendar-alt"></i> </th>
+                                            <th>Total <i class="fas fa-money-bill-wave"></i></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
@@ -66,7 +66,7 @@
                                                 <td> <?= $venta['descripcion'] ?> </td>
                                                 <td> <?= $venta['fecha']  ?> </td>
                                                 <td> <?= $venta['total']  ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $venta['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $venta['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $venta['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>
@@ -282,7 +282,7 @@
                     if (data.data.id !== null) {
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'El cliente se ha editado correctamente!',
+                            text: 'La venta se ha editado correctamente!',
                         }).then(function() {
                             location.reload();
                         });

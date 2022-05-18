@@ -72,7 +72,7 @@
                                                 <td> <?= $cita['fecha']  ?> </td>
                                                 <td> <?= $cita['hora']  ?> </td>
                                                 <td> <?= $cita['ubicacion'] ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $cita['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $cita['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $cita['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>

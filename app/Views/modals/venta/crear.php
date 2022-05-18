@@ -51,7 +51,7 @@
 
                             </select>
                             <input type="number" class="form-control" id="cantidad" name="cantidad" min="0" max="0" value="0" style="width: 20%; margin:10px;" onkeyup="validationFunction()" onchange="calcularTotal()">
-                            <input type="number" class="form-control" id="precio" name="precio" min="0" max="9999" value="0" style="width: 20%;">
+                            <input type="number" class="form-control" id="precio" name="precio" min="0" max="9999" value="0" style="width: 20%;" disabled>
                             <!--<button type="button" class="btn btn-primary" style="width: 20%;" onclick="agregarCarrito()">Agregar</button> -->
                         </div>
                         <div class="mb-3">

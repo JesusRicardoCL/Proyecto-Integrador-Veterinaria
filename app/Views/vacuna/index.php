@@ -39,9 +39,9 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Mascota <i class="fas fa-user"></i> </th>
-                                            <th>Fecha <i class="fas fa-map-marked"></i> </th>
-                                            <th>Nombre <i class="fas fa-phone-square-alt"></i> </th>
+                                            <th>Mascota <i class="fas fa-dog"></i> </th>
+                                            <th>Fecha <i class="fas fa-calendar-alt"></i> </th>
+                                            <th>Nombre <i class="fas fa-text-height"></i> </th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
                                         </tr>
                                     </thead>
@@ -63,7 +63,7 @@
                                                 <td> <?= $vacuna['mascota'] ?> </td>
                                                 <td> <?= $vacuna['fecha'] ?> </td>
                                                 <td> <?= $vacuna['nombre']  ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $vacuna['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $vacuna['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $vacuna['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>

@@ -2,7 +2,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar Vacunacion</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Vacuna</h5>
                     <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer; font-size: 1.5em"></i>
                 </div>
                 <div class="modal-body">
@@ -23,7 +23,7 @@
                     </div> 
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Fecha de vacunacion:</label>
-                            <input type="text" class="form-control" name="fecha">
+                            <input type="date" class="form-control" name="fecha">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Nombre de la vacuna:</label>

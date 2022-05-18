@@ -17,8 +17,8 @@
                             <input type="text" class="form-control" name="descripcion">
                         </div>
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">fecha:</label>
-                            <input type="text" class="form-control" name="fecha">
+                            <label for="recipient-name" class="col-form-label" hidden>Fecha:</label>
+                            <input type="text" class="form-control" name="fecha" hidden>
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">Precio:</label>

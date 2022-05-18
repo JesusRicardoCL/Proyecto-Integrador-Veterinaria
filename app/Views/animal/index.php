@@ -57,7 +57,7 @@
                                             <tr>
                                                 <td> <?= $animal['id'] ?> </td>
                                                 <td> <?= $animal['nombre'] ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $animal['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $animal['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $animal['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>

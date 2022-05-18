@@ -38,7 +38,7 @@
                             <form id="form_editar">
                                 <div class="col" style="margin: 20px; height: auto; width: 60%; border: 2px solid #d9d9d9; border-radius: 20px; padding: 50px; float: left; ">
                                     <p style="font-size:26px">
-                                        <b><label id="labelNombre" style="word-wrap: break-word;" hidden>Nombre: </label></b>
+                                        <b><label id="labelNombre" style="word-wrap: break-word;" hidden>Nuevo nombre: </label></b>
                                         <input class="form-control" id="idNombre" name="nombre" style="font-size: 20px;" value="<?= $mascota['nombre'] ?>" hidden />
                                     </p>
                                     <p style="font-size:26px">
@@ -86,7 +86,7 @@
                                 <hr style="border:none" />
                                 <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " style="width: 100%;" data-id="<?= $mascota['id'] ?>">Eliminar</button>
                                 <hr>
-                                <a onclick="abrirModalVacuna(0)" class="btn btn-primary" style="width: 100%">Agregar vacuna</a>
+                                <button data-bs-toggle="modal" data-bs-target="#createVacunaModal" class="btn btn-primary" style="width: 100%">Agregar vacuna</button>
                                 <hr style="border:none" />
 
                             </div>
@@ -123,8 +123,8 @@
                                                     <td><?= $vacuna['fecha'] ?></td>
                                                     <td><?= $vacuna['nombre'] ?></td>
                                                     <td>
-                                                        <a onclick="abrirModalVacuna(<?= $vacuna['id'] ?>)" class="btn btn-success">Editar</a>
-                                                        <a onclick="eliminarVacuna(<?= $vacuna['id'] ?>)" class="btn btn-danger">Eliminar</a>
+                                                        <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarVacunaModal" onClick="llenarVacunaForm()" data-id="<?= $vacuna['id'] ?>">Editar</a>
+                                                        <button data-bs-toggle="modal" data-bs-target="#deleteVacunaModal" class="btn btn-danger " data-id="<?= $vacuna['id'] ?>">Eliminar</button>
                                                     </td>
                                                 </tr>
 
@@ -158,12 +158,19 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    
+
 
     <!-- Modal Delete Product-->
     <?php echo view('modals/mascota/eliminar'); ?>
 
-    
+    <!-- Modal Create Vacuna-->
+    <?php echo view('modals/mascota/crearVacuna'); ?>
+
+    <!-- Modal Update Vacuna-->
+    <?php echo view('modals/mascota/editarVacuna'); ?>
+
+    <!-- Modal Delete Vacuna-->
+    <?php echo view('modals/mascota/eliminarVacuna'); ?>
 
     <!-- Scripts -->
     <?php echo view('plantilla/scripts'); ?>
@@ -172,6 +179,7 @@
     <script>
         var url = "<?= base_url(); ?>";
 
+        //Llenas los dos select
         function llenarForm() {
 
             $("#idUsuarioEditar").val(<?= $mascota['idUsuario'] ?>).change();
@@ -181,8 +189,7 @@
 
         llenarForm();
 
-
-
+        //Las funciones del boton de editar
         function change_state(obj) {
             var idMascota = $("#idMascota").val();
             var idCliente = $("#cliente").val();
@@ -242,6 +249,7 @@
             }
         }
 
+        //Eliminar la mascota
         function eliminar() {
 
             $.ajax({
@@ -262,7 +270,7 @@
                         text: 'La mascota se ha eliminado correctamente!',
                         type: 'sucess'
                     }).then(function() {
-                        location.href=url+'/mascota/index';
+                        location.href = url + '/mascota/index';
                     });
 
 
@@ -277,6 +285,140 @@
             var modal = $(this)
 
             $("#id_eliminar").val(id)
+
+        })
+
+
+        function crearVacuna() {
+
+            $.ajax({
+                    url: url + '/vacuna/create',
+                    data: $("#create").serialize() + "&idMascota=" + <?= $mascota['id'] ?>,
+                    type: "POST",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+
+                    if (data.id != null) {
+
+                        Swal.fire({
+                            title: 'Éxito!',
+                            text: 'la vacuna se ha creado correctamente!',
+                        }).then(function() {
+                            location.reload();
+                        });
+
+                    } else {
+
+                        alert("Hay algo mal en el formulario ");
+                    }
+                });
+
+        }
+
+        //Para rellenar el modal de editar
+        function llenarVacunaForm() {
+            $.ajax({
+                    url: url + '/vacuna/show/' + $("#id_editarVacuna").val(),
+                    data: {},
+                    type: "GET",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+                    var vacuna = data.vacuna;
+
+                    console.log(data.vacuna);
+
+                    $("input[name='fecha']").val(vacuna.fecha);
+                    $("input[name='nombre']").val(vacuna.nombre);
+                    $("select[name='idMascota'] option[value='" + vacuna.idMascota + "']").attr("selected", "selected");
+                    //  $("#idtipo_usuario").val(usuario.tipo_usuario);
+                });
+
+        }
+
+        llenarVacunaForm();
+
+        $('#editarVacunaModal').on('show.bs.modal', function(event) {
+
+            var button = $(event.relatedTarget)
+            var id = button.data('id');
+            var modal = $(this)
+
+
+            $("#id_editarVacuna").val(id)
+
+        })
+
+        function editarVacuna() {
+            console.log($("#form_editarVacuna").serialize());
+            $.ajax({
+                    url: url + '/vacuna/update/' + $("#id_editarVacuna").val(),
+                    data: $("#form_editarVacuna").serialize(),
+                    type: "POST",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+
+                    if (data.data.id !== null) {
+                        Swal.fire({
+                            title: 'Éxito!',
+                            text: 'La vacuna se ha editado correctamente!',
+                        }).then(function() {
+                            location.reload();
+                        });
+                    } else {
+                        alert("Hay algo mal en el formulario ");
+                    }
+
+                });
+
+        }
+
+        function eliminarVacuna() {
+
+            $.ajax({
+                    url: url + '/vacuna/delete/' + $("#id_eliminarVacuna").val(),
+                    data: {},
+                    type: "POST",
+                    dataType: "json",
+                    headers: {
+                        token: localStorage.getItem("token")
+                    }
+                })
+                .done(function(data, textStatus, jqXHR) {
+
+                    console.log(data);
+
+                    Swal.fire({
+                        title: 'Éxito!',
+                        text: 'La vacuna se ha eliminado correctamente!',
+                        type: 'sucess'
+                    }).then(function() {
+                        location.reload();
+                    });
+
+
+                });
+
+        }
+
+        $('#deleteVacunaModal').on('show.bs.modal', function(event) {
+
+            var button = $(event.relatedTarget)
+            var id = button.data('id');
+            var modal = $(this)
+
+            $("#id_eliminarVacuna").val(id)
 
         })
     </script>

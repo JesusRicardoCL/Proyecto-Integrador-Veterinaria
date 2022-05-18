@@ -41,7 +41,7 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Nombre <i class="fas fa-user"></i> </th>
-                                            <th>Raza <i class="fas fa-map-marked"></i> </th>
+                                            <th>Raza <i class="fas fa-dna"></i> </th>
                                             
                                             <th>Animal <i class="fas fa-dog"></i></i> </th>
                                             <th>Cliente <i class="far fa-address-card"></i></th>
@@ -75,7 +75,7 @@
                                                 <td> <?= $mascota['cliente']?> </td>
 
                                                 
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $mascota['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $mascota['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $mascota['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>

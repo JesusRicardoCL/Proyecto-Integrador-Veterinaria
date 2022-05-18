@@ -32,13 +32,13 @@
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('cita/index'); ?>">
                 <i class="fas fa-solid fa-calendar-day"></i>&nbsp;&nbsp;
-                <span> Registrar una cita</span>
+                <span> Registro de citas</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('vacuna/index'); ?>">
-                <i class="fas fa-solid fa-calendar-day"></i>&nbsp;&nbsp;
-                <span> Registrar una vacunacion</span>
+                <i class="fas fa-solid fa-syringe"></i>&nbsp;&nbsp;
+                <span> Registro de vacunas</span>
             </a>
         </li>
     </ul>

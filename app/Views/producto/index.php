@@ -66,7 +66,7 @@
                                                 <td> <?= $producto['descripcion'] ?> </td>
                                                 <td> <?= $producto['cantidad']  ?> </td>
                                                 <td> <?= $producto['precio']  ?> </td>
-                                                <td> <a data-bs-toggle="modal" class="btn btn-warning" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $producto['id'] ?>">Editar</a>
+                                                <td> <a data-bs-toggle="modal" class="btn btn-success" data-bs-target="#editarModal" onClick="llenarForm()" data-id="<?= $producto['id'] ?>">Editar</a>
                                                     <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-danger " data-id="<?= $producto['id'] ?>">Eliminar</button>
                                                 </td>
                                             </tr>
@@ -245,7 +245,7 @@
                     if (data.data.id !== null) {
                         Swal.fire({
                             title: 'Éxito!',
-                            text: 'El cliente se ha editado correctamente!',
+                            text: 'El producto se ha editado correctamente!',
                         }).then(function() {
                             location.reload();
                         });
