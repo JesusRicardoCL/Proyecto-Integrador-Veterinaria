@@ -74,3 +74,29 @@ CRITICAL - 2022-05-18 02:57:16 --> Class 'Firebase\JWT\JWT' not found
 #2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-05-18 04:11:22 --> include(C:\Users\jesus\Documents\GitHub\vet\vendor\composer/../firebase/php-jwt/src/JWT.php): failed to open stream: No such file or directory
+#0 C:\Users\jesus\Documents\GitHub\vet\vendor\composer\ClassLoader.php(571): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\User...', 'C:\\Users\\jesus\\...', 571, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\vendor\composer\ClassLoader.php(571): include()
+#2 C:\Users\jesus\Documents\GitHub\vet\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\Users\\jesus\\...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Firebase\\JWT\\JW...')
+#4 C:\Users\jesus\Documents\GitHub\vet\app\Controllers\Auth.php(60): spl_autoload_call('Firebase\\JWT\\JW...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Auth->create()
+#6 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 04:13:29 --> include(C:\Users\jesus\Documents\GitHub\vet\vendor\composer/../laminas/laminas-escaper/src/Escaper.php): failed to open stream: No such file or directory
+#0 C:\Users\jesus\Documents\GitHub\vet\vendor\composer\ClassLoader.php(571): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:\\User...', 'C:\\Users\\jesus\\...', 571, Array)
+#1 C:\Users\jesus\Documents\GitHub\vet\vendor\composer\ClassLoader.php(571): include()
+#2 C:\Users\jesus\Documents\GitHub\vet\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\Users\\jesus\\...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Laminas\\Escaper...')
+#4 C:\Users\jesus\Documents\GitHub\vet\system\Common.php(418): spl_autoload_call('Laminas\\Escaper...')
+#5 C:\Users\jesus\Documents\GitHub\vet\system\Router\RouteCollection.php(1116): esc('BaseController(...')
+#6 C:\Users\jesus\Documents\GitHub\vet\system\Router\RouteCollection.php(517): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#7 C:\Users\jesus\Documents\GitHub\vet\system\Config\Routes.php(27): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#8 C:\Users\jesus\Documents\GitHub\vet\app\Config\Routes.php(11): require('C:\\Users\\jesus\\...')
+#9 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(713): require('C:\\Users\\jesus\\...')
+#10 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#11 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

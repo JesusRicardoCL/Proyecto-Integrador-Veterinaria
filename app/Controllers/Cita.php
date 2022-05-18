@@ -31,16 +31,11 @@ Class Cita extends ResourceController {
     }
 
     public function index(){
-        $db = db_connect();
-        $model = new CitaModel($db);
-        $result = $this->model->getCitas();
-
-       
 
         
     
-        $usuarioModel = new UsuarioModel();
-        $mascotaModel = new MascotaModel();
+        $usuarioModel = model('App\Models\UsuarioModel');
+        $mascotaModel = model('App\Models\MascotaModel');
         
        
        

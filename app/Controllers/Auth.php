@@ -38,7 +38,7 @@ class Auth extends ResourceController
 
 
     if ($tipo == "usuario") {
-      $usuarioModel = new UsuarioModel();
+      $usuarioModel = model('App\Models\UsuarioModel');
       $this->usuario = $usuarioModel->login($user, $password);
       /////////////
       if ($this->usuario) {
@@ -95,7 +95,7 @@ class Auth extends ResourceController
     if (!$token) {
       return false;
     } else {
-      $usuarioModel = new UsuarioModel();
+      $usuarioModel = model('App\Models\UsuarioModel');
       $this->usuario =  $usuarioModel->find($token->data->user_id);
       $this->tipoUsuario = "usuario";
 

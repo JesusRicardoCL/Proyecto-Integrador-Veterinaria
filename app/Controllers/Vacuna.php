@@ -31,12 +31,7 @@ Class Vacuna extends ResourceController {
    
 
     public function index(){
-        $db = db_connect();
-        $model = new VacunaModel($db);
-        $result = $this->model->getVacunas();
-       
-       
-        $mascotaModel = new MascotaModel();
+        $mascotaModel = model('App\Models\MascotaModel');
         
        
        

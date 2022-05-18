@@ -17,8 +17,8 @@ class Venta extends ResourceController
     public function index()
     {
 
-        $usuarioModel = new UsuarioModel();
-        $productoModel = new ProductoModel();
+        $usuarioModel = model('App\Models\UsuarioModel');
+        $productoModel = model('App\Models\ProductoModel');
 
         $data = [
             "usuarios" => $usuarioModel->findAll(),
