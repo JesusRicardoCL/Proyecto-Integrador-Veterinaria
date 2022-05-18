@@ -92,7 +92,7 @@
                 })
                 .fail(function(jqXHR, textStatus, errorThrown) { // si hay algun error, esta en textStatus
 
-                    console.log("La solicitud a fallado: " + textStatus);
+                    console.log("La solicitud a fallado: " + textStatus + errorThrown);
 
                 })
         } // termina function login

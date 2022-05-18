@@ -32,5 +32,13 @@ class VacunaModel extends Model {
 
 
     }
+
+    public function getByMascota($idMascota){
+        return  $this->db->table('vacunas as c')
+        ->select('c.*, m.nombre as mascota')
+        ->join('mascotas as m','c.idMascota = m.id')
+        ->getWhere(['c.idMascota' => $idMascota])
+        ->getResultArray();
+    }
         
 }

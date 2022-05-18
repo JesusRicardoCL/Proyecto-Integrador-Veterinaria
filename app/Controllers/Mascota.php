@@ -5,6 +5,7 @@ use CodeIgniter\RESTful\ResourceController;
 use App\models\UsuarioModel;
 use App\models\AnimalModel;
 use App\Models\MascotaModel;
+use App\Models\VacunaModel;
 use Config\Services;
 
 Class Mascota extends ResourceController {
@@ -17,7 +18,7 @@ Class Mascota extends ResourceController {
     {
 
         $db = db_connect();
-        $model = new MascotaModel($db);
+        $model = model('App\Models\MascotaModel');
         $result = $this->model->getMascotas();
         echo '<pre>';
             print_r($result);
@@ -47,23 +48,36 @@ Class Mascota extends ResourceController {
     }
 
     public function index(){
-
-        $db = db_connect();
-        $model = new MascotaModel($db);
-        $result = $this->model->getMascotas();
  
-
-        $usuarioModel = new UsuarioModel();
-        $animalModel = new AnimalModel();
+        $mascotaModel = model('App\Models\MascotaModel');
+        $usuarioModel = model('App\Models\UsuarioModel');
+        $animalModel = model('App\Models\AnimalModel');
         
         $data=[
 
-             "mascotas" => $this->model->getMascotas(), 
+             "mascotas" => $mascotaModel->getMascotas(),
              "usuarios" => $usuarioModel->findAll(),
              "animales" => $animalModel->findAll(),
          ]; 
 
         echo view('mascota/index',$data);
+    }
+
+    public function detalles($id = NULL){
+
+        $usuarioModel = model('App\Models\UsuarioModel');
+        $animalModel = model('App\Models\AnimalModel');
+        $vacunaModel = model('App\Models\VacunaModel');
+
+        $data=[
+            "mascota" => $this->model->find($id),
+            "usuarios" => $usuarioModel->findAll(),
+            "animales" => $animalModel->findAll(),
+            "vacunas" => $vacunaModel->getByMascota($id)
+        ];
+
+        //return $this->respond($data);
+        echo view('mascota/detalles',$data);
     }
 
     public function login(){
@@ -84,6 +98,17 @@ Class Mascota extends ResourceController {
     public function show($id = NULL){
         $data=[
             "mascota" => $this->model->find($id)
+        ];
+
+        return $this->respond($data);
+    }
+
+    public function showByUser($id = NULL){
+
+        $result = $this->model->getMascotasByUser($id);
+
+        $data=[
+            "mascotas" => $result
         ];
 
         return $this->respond($data);

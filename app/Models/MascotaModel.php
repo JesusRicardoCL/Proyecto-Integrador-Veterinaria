@@ -53,5 +53,15 @@ class MascotaModel extends Model {
         //$builder->select('a.*, mascota.nombre as mascota');
         //$builder->join('mascotas as mascota', 'animal.id = mascota.idAnimal');
     }
+
+    public function getMascotasByUser($idUsuario){
+        return  $this->db->table('mascotas as m')
+        ->select('m.*, a.nombre as animal, u.nombre as cliente')
+        //->where("idUsuario",$idUsuario)
+        ->join('animales as a','m.idAnimal = a.id')
+        ->join('usuarios as u','m.idUsuario = u.id')
+        ->getWhere(['m.idUsuario' => $idUsuario])
+        ->getResultArray();
+    }
     
 }

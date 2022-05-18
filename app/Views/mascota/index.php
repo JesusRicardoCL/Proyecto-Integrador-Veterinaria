@@ -42,7 +42,7 @@
                                             <th>ID</th>
                                             <th>Nombre <i class="fas fa-user"></i> </th>
                                             <th>Raza <i class="fas fa-map-marked"></i> </th>
-                                            <th>Descripción <i class="fas fa-phone-square-alt"></i> </th>
+                                            
                                             <th>Animal <i class="fas fa-dog"></i></i> </th>
                                             <th>Cliente <i class="far fa-address-card"></i></th>
                                             <th>Acciones <i class="fas fa-fw fa-edit"></i></th>
@@ -53,7 +53,7 @@
                                             <th>ID</th>
                                             <th>Nombre</th>
                                             <th>Raza</th>
-                                            <th>Descripción</th>
+                                            
                                             <th>Animal</th>
                                             <th>Cliente</th>
                                             <th>Acciones</i></th>
@@ -67,9 +67,9 @@
 
                                             <tr>
                                                 <td> <?= $mascota['id'] ?> </td>
-                                                <td> <?= $mascota['nombre'] ?> </td>
+                                                <td> <a class="nav-link" style="cursor:pointer" href="<?= base_url()."/mascota/detalles/".$mascota['id'] ?> "><?= $mascota['nombre'] ?></a> </td>
                                                 <td> <?= $mascota['raza'] ?> </td>
-                                                <td> <?= $mascota['descripcion']  ?> </td>
+                                                
                                                 <td> <?= $mascota['animal']  ?> </td>
                                             
                                                 <td> <?= $mascota['cliente']?> </td>
@@ -122,7 +122,7 @@
     <!-- Modal Delete Product-->
     <?php echo view('modals/mascota/eliminar'); ?>
 
-      <!-- Modal create Vacuna-->
+    <!-- Modal create Vacuna-->
     <?php echo view('modals/vacuna/crear'); ?>
 
     <!-- Scripts -->

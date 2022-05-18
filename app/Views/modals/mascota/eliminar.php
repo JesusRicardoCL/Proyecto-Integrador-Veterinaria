@@ -6,7 +6,7 @@
                     <i class="fa fa-times" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer; font-size: 1.5em"></i>
                 </div>
                 <div class="modal-body">
-                    ¿Seguro que deseas eliminar el animal seleccionado?
+                    ¿Seguro que deseas eliminar la mascota seleccionada?
                 </div>
                 <input id="id_eliminar" type="hidden">
                 <div class="modal-footer">
