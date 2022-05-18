@@ -56,3 +56,21 @@ CRITICAL - 2022-05-18 00:34:46 --> Invalid argument supplied for foreach()
 #11 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #12 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 {main}
+CRITICAL - 2022-05-18 02:57:16 --> Class 'Firebase\JWT\JWT' not found
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Auth->create()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-18 02:57:16 --> Class 'Firebase\JWT\JWT' not found
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Auth->create()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-18 02:57:16 --> Class 'Firebase\JWT\JWT' not found
+#0 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(832): App\Controllers\Auth->create()
+#1 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\Users\jesus\Documents\GitHub\vet\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\jesus\Documents\GitHub\vet\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
