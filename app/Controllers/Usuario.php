@@ -19,6 +19,11 @@ Class Usuario extends Auth{
         echo view('usuario/index',$data);
     }
 
+    public function index2(){
+
+        echo view('usuario/index2');
+    }
+
     public function login(){
         
         echo view('usuario/login');

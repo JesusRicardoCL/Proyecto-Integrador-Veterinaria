@@ -23,12 +23,14 @@
                 <span> Mascotas</span>
             </a>
         </li>
+        <!--
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('venta/index'); ?>">
                 <i class="fas fa-solid fa-prescription-bottle"></i>&nbsp;&nbsp;
                 <span> Venta de productos</span>
             </a>
         </li>
+        -->
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('cita/index'); ?>">
                 <i class="fas fa-solid fa-calendar-day"></i>&nbsp;&nbsp;
